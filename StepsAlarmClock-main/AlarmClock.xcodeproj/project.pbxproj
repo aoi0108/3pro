@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */; };
+		8A1AB2FE2BF85A8F0029ECFF /* SunnyBackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */; };
+		8A30EE242BF488BF00296C6E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE232BF488BF00296C6E /* QuizView.swift */; };
+		8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE302BF4EA4F00296C6E /* ScoreView.swift */; };
 		D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */; };
 		D153E0582BA3FA8C00529615 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0572BA3FA8C00529615 /* ContentView.swift */; };
 		D153E05A2BA3FA8F00529615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D153E0592BA3FA8F00529615 /* Assets.xcassets */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyBackground.swift; sourceTree = "<group>"; };
+		8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyBackGround.swift; sourceTree = "<group>"; };
+		8A30EE232BF488BF00296C6E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuizView.swift; path = ../QuizView.swift; sourceTree = "<group>"; };
+		8A30EE302BF4EA4F00296C6E /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		D153E0522BA3FA8C00529615 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockApp.swift; sourceTree = "<group>"; };
 		D153E0572BA3FA8C00529615 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,9 +50,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8A30EE2F2BF48D2500296C6E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				8A30EE232BF488BF00296C6E /* QuizView.swift */,
+				8A30EE302BF4EA4F00296C6E /* ScoreView.swift */,
+				8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */,
+				8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */,
+			);
+			name = "New Group";
+			path = "AlarmClock/New Group";
+			sourceTree = "<group>";
+		};
 		D153E0492BA3FA8B00529615 = {
 			isa = PBXGroup;
 			children = (
+				8A30EE2F2BF48D2500296C6E /* New Group */,
 				D153E0772BAD780100529615 /* MPVolume.swift */,
 				D153E0752BAC2ABE00529615 /* AppDelegate.swift */,
 				D153E0542BA3FA8C00529615 /* AlarmClock */,
@@ -116,7 +137,7 @@
 		D153E04A2BA3FA8C00529615 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = 1;
+				BuildIndependentTargetsInParallel = NO;
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
@@ -163,8 +184,12 @@
 				D153E0782BAD780100529615 /* MPVolume.swift in Sources */,
 				D153E0582BA3FA8C00529615 /* ContentView.swift in Sources */,
 				D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */,
+				8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */,
 				D153E0762BAC2ABF00529615 /* AppDelegate.swift in Sources */,
+				8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */,
 				D153E0642BA408A500529615 /* SetTimeView.swift in Sources */,
+				8A30EE242BF488BF00296C6E /* QuizView.swift in Sources */,
+				8A1AB2FE2BF85A8F0029ECFF /* SunnyBackGround.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +323,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmClock/Preview Content\"";
-				DEVELOPMENT_TEAM = XY72RAZ526;
+				DEVELOPMENT_TEAM = G3Y54DBA6F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlarmClock/Info.plist;
@@ -330,7 +355,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmClock/Preview Content\"";
-				DEVELOPMENT_TEAM = XY72RAZ526;
+				DEVELOPMENT_TEAM = G3Y54DBA6F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlarmClock/Info.plist;
