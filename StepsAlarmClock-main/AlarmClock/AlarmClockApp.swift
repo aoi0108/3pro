@@ -6,7 +6,7 @@ struct AlarmClockApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
