@@ -9,7 +9,6 @@ import SwiftUI
 
 struct MainView: View {
     
-    @State private var myTimer = Date()
     
     var body: some View {
         NavigationStack{
@@ -17,7 +16,7 @@ struct MainView: View {
                 Text("レベル：1")
                 Image("neko")
                 HStack {
-                    NavigationLink(destination: SetTimeView(myTimer: $myTimer)) {
+                    NavigationLink(destination: ContentView()) {
                         Text("アラームを設定する")
                             .foregroundColor(.blue)
                             .font(.title)
