@@ -19,6 +19,7 @@ struct ContentView: View {
     @State private var isTimerMoving = false
     @State private var myTimer = Date()
     @State private var steps = 0
+    @State private var navigateToQuiz = false
     
     private let pedometer = CMPedometer()
     private let brightness: CGFloat = UIScreen.main.brightness
@@ -66,19 +67,20 @@ struct ContentView: View {
                                 .font(.title)
                             
                         }
-                        .padding()
-                        HStack{
-                            Text("あと")
-                                .font(.title)
-                                .foregroundColor(.primary)
-                            Text("\(limitSteps-steps < 0 ? 0 : limitSteps-steps)")
-                                .font(.system(size: 50))
-                                .bold()
-                                .foregroundColor(.red)
-                            Text("歩")
-                                .font(.title)
-                                .foregroundColor(.primary)
-                        }
+                        
+//                        .padding()
+//                        HStack{
+//                            Text("あと")
+//                                .font(.title)
+//                                .foregroundColor(.primary)
+//                            Text("\(limitSteps-steps < 0 ? 0 : limitSteps-steps)")
+//                                .font(.system(size: 50))
+//                                .bold()
+//                                .foregroundColor(.red)
+//                            Text("歩")
+//                                .font(.title)
+//                                .foregroundColor(.primary)
+//                        }
                         Button{
                             MPVolumeView.setVolume(soundLevel)
                             stopAlarm()
@@ -88,12 +90,15 @@ struct ContentView: View {
                                 .foregroundStyle(.white)
                         }
                         .padding()
-                        .background(steps < limitSteps ? Color(UIColor.lightGray):.blue)
+                        .background(Color(UIColor.blue))
                         .disabled(steps < limitSteps)
                     }
                 }
+                NavigationLink(destination: QuizView(), isActive: $navigateToQuiz) {
+                                   EmptyView()
+                }
             }
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
         }
     }
     
@@ -160,6 +165,10 @@ struct ContentView: View {
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 19.0) {
             MPVolumeView.setVolume(1.0)
+        }
+        // QuizViewに遷移する
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                   self.navigateToQuiz = true
         }
     }
     
