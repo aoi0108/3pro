@@ -6,17 +6,15 @@ struct QuizView: View {
     @State private var quizArray: [String] = []
     @State private var showingScore = false
     @State private var selectedAnswerIndex: Int?
+    @State public var correct : Bool
+    @ObservedObject var alarmManager: AlarmManager
     
     let csvArray: [String] = [
         " John Smith, a well-respected entrepreneur, _______ his latest venture at the conference last week./2/launching/ launched/launch/to launch/",
-        
     ]
     
     var body: some View {
         VStack {
-            //Text("第\(quizCount + 1)問")
-                //.font(.title)
-                
             if !quizArray.isEmpty {
                 Text(quizArray[0])
                     .padding(30)
@@ -41,11 +39,9 @@ struct QuizView: View {
         .onAppear {
             self.loadQuiz()
         }
-        
         .sheet(isPresented: $showingScore) {
-            ScoreView(correctCount: self.correctCount)
-        }  
-        
+            ScoreView(correctCount: self.correctCount, alarmManager: alarmManager, correct: $correct)
+        }
     }
     
     private func loadQuiz() {
@@ -57,6 +53,7 @@ struct QuizView: View {
     private func checkAnswer(selectedIndex: Int) {
         if selectedIndex - 1 == Int(quizArray[1]) {
             correctCount += 1
+            correct = true
         }
         
         quizCount += 1
@@ -78,12 +75,12 @@ struct QuizView: View {
         }
         return Color.gray
     }
-    
 }
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizView()
+        @State var correct = true
+                ScoreView(correctCount: 0, alarmManager: AlarmManager(), correct: $correct)
+            }
     }
-}
 

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */; };
 		8A1AB2FE2BF85A8F0029ECFF /* SunnyBackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */; };
+		8A1EFDF62C07C47000008AB5 /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */; };
 		8A30EE242BF488BF00296C6E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE232BF488BF00296C6E /* QuizView.swift */; };
 		8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE302BF4EA4F00296C6E /* ScoreView.swift */; };
 		D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyBackground.swift; sourceTree = "<group>"; };
 		8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyBackGround.swift; sourceTree = "<group>"; };
+		8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
 		8A30EE232BF488BF00296C6E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuizView.swift; path = ../QuizView.swift; sourceTree = "<group>"; };
 		8A30EE302BF4EA4F00296C6E /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		D153E0522BA3FA8C00529615 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,7 @@
 				D153E06E2BABC79100529615 /* Info.plist */,
 				D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */,
 				D153E0572BA3FA8C00529615 /* ContentView.swift */,
+				8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */,
 				D153E0632BA408A500529615 /* SetTimeView.swift */,
 				FE3EA5E22BF47CDC002F649E /* MainView.swift */,
 				FE3EA5E62BF47F8A002F649E /* neko.png */,
@@ -193,6 +196,7 @@
 				D153E0582BA3FA8C00529615 /* ContentView.swift in Sources */,
 				D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */,
 				8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */,
+				8A1EFDF62C07C47000008AB5 /* AlarmManager.swift in Sources */,
 				D153E0762BAC2ABF00529615 /* AppDelegate.swift in Sources */,
 				8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */,
 				D153E0642BA408A500529615 /* SetTimeView.swift in Sources */,

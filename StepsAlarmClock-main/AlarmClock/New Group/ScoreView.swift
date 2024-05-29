@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
+import MediaPlayer
 
 struct ScoreView: View {
     let correctCount: Int
-    
+    @ObservedObject var alarmManager: AlarmManager // alarmManagerをプロパティとして追加
+    @Binding var correct:Bool
     var body: some View {
         ZStack{
-            if(correctCount == 0){
+            if(correct == false){
                 RainyBackground()
             }else{
                 SunnyBackground()
@@ -27,12 +29,28 @@ struct ScoreView: View {
                 Text("\(correctCount)")
                     .font(.largeTitle)
                     .padding()
+                if(correct == true){
+                    Button {     //音楽を止める
+                        musicPlayer.stop()
+                        } label: {
+                            Text("アラーム停止")
+                                .font(.title)
+                                .foregroundStyle(.white)
+                        }
+                }
+                
             }
+            
         }
         
         
             }
 }
-#Preview {
-    ScoreView(correctCount: 0)
+struct ScoreView_Previews: PreviewProvider {
+    @State static var correct = true
+    
+    static var previews: some View {
+        ScoreView(correctCount: 0, alarmManager: AlarmManager(), correct: $correct)
+    }
 }
+
