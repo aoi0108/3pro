@@ -8,13 +8,17 @@
 import SwiftUI
 
 struct MainView: View {
-    
+    @AppStorage("score") var correctCount : Int = 0
     
     var body: some View {
+        
         NavigationStack{
             VStack{
-                Text("レベル：1")
+                Text("レベル： " + String(correctCount) )
+                    .font(.title)
+                    .padding()
                 Image("neko")
+                    .padding()
                 HStack {
                     NavigationLink(destination: ContentView()) {
                         Text("アラームを設定する")
@@ -32,6 +36,7 @@ struct MainView: View {
             
             
         }
+        
     }
 }
 
