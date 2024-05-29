@@ -19,7 +19,9 @@ struct ScoreView: View {
             }
             
             VStack {
-                Text("Your score is ...")
+                Text("You've got 1 point!")
+                    .padding()
+                Text("Your total score is ...")
                     .font(.title)
                 
                 Text("\(correctCount)")

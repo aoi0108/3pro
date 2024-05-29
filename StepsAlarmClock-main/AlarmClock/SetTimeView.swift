@@ -35,7 +35,7 @@ struct SetTimeView: View {
                     .padding()
                 }
             }
-            .preferredColorScheme(.dark)
+            .preferredColorScheme(.light)
         }
     }
 }
