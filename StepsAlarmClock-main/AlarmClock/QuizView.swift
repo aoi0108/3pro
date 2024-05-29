@@ -2,7 +2,7 @@ import SwiftUI
 
 struct QuizView: View {
     @State private var quizCount = 0
-    @State private var correctCount = 0
+    @AppStorage("score") var correctCount = 0
     @State private var quizArray: [String] = []
     @State private var showingScore = false
     @State private var selectedAnswerIndex: Int?
