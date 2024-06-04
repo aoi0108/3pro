@@ -117,7 +117,7 @@ struct ContentView: View {
             if !isTimerMoving {
                 timer.invalidate()
             }
-            now = Date()
+            now = Date()+50
             if target > now{
                 interval -= 1
                 let hours = Int(interval) / 3600

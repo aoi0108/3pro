@@ -9,13 +9,14 @@ import SwiftUI
 
 struct ScoreView: View {
     let correctCount: Int
+    let isCorrect: Bool
     
     var body: some View {
         ZStack{
-            if(correctCount == 0){
-                RainyBackground()
-            }else{
+            if isCorrect{
                 SunnyBackground()
+            }else{
+                RainyBackground()
             }
             
             VStack {
@@ -34,5 +35,5 @@ struct ScoreView: View {
             }
 }
 #Preview {
-    ScoreView(correctCount: 0)
+    ScoreView(correctCount: 0, isCorrect: true)
 }
