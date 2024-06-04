@@ -6,6 +6,7 @@ struct QuizView: View {
     @State private var quizArray: [String] = []
     @State private var showingScore = false
     @State private var selectedAnswerIndex: Int?
+    @State private var isCorrect = false
     
     let csvArray: [String] = [
         " John Smith, a well-respected entrepreneur, _______ his latest venture at the conference last week./2/launching/ launched/launch/to launch/",
@@ -43,8 +44,8 @@ struct QuizView: View {
         }
         
         .sheet(isPresented: $showingScore) {
-            ScoreView(correctCount: self.correctCount)
-        }  
+            ScoreView(correctCount: self.correctCount, isCorrect: self.isCorrect)
+        }
         
     }
     
@@ -57,6 +58,9 @@ struct QuizView: View {
     private func checkAnswer(selectedIndex: Int) {
         if selectedIndex - 1 == Int(quizArray[1]) {
             correctCount += 1
+            isCorrect = true
+        }else{
+            isCorrect = false
         }
         
         quizCount += 1
