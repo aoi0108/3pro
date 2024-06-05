@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MainView: View {
     @AppStorage("score") var correctCount : Int = 0
-    
+    @State private var correct: Bool = false
     var body: some View {
         
         NavigationStack{
@@ -20,7 +20,7 @@ struct MainView: View {
                 Image("neko")
                     .padding()
                 HStack {
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: ContentView(correct: $correct)) {
                         Text("アラームを設定する")
                             .foregroundColor(.blue)
                             .font(.title)
