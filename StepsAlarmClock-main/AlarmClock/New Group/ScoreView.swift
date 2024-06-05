@@ -10,6 +10,7 @@ import MediaPlayer
 
 struct ScoreView: View {
     let correctCount: Int
+<<<<<<< HEAD
     @ObservedObject var alarmManager: AlarmManager // alarmManagerをプロパティとして追加
     @Binding var correct:Bool
     var body: some View {
@@ -17,7 +18,16 @@ struct ScoreView: View {
             if(correct == false){
                 RainyBackground()
             }else{
+=======
+    let isCorrect: Bool
+    
+    var body: some View {
+        ZStack{
+            if isCorrect{
+>>>>>>> main
                 SunnyBackground()
+            }else{
+                RainyBackground()
             }
             
             VStack {
@@ -46,11 +56,16 @@ struct ScoreView: View {
         
             }
 }
+<<<<<<< HEAD
 struct ScoreView_Previews: PreviewProvider {
     @State static var correct = true
     
     static var previews: some View {
         ScoreView(correctCount: 0, alarmManager: AlarmManager(), correct: $correct)
     }
+=======
+#Preview {
+    ScoreView(correctCount: 0, isCorrect: true)
+>>>>>>> main
 }
 
