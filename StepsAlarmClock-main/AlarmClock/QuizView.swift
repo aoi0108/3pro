@@ -6,12 +6,8 @@ struct QuizView: View {
     @State private var quizArray: [String] = []
     @State private var showingScore = false
     @State private var selectedAnswerIndex: Int?
-<<<<<<< HEAD
-    @State public var correct : Bool
     @ObservedObject var alarmManager: AlarmManager
-=======
-    @State private var isCorrect = false
->>>>>>> main
+    @State var isCorrect = false
     
     let csvArray: [String] = [
         " John Smith, a well-respected entrepreneur, _______ his latest venture at the conference last week./2/launching/ launched/launch/to launch/",
@@ -44,14 +40,11 @@ struct QuizView: View {
             self.loadQuiz()
         }
         .sheet(isPresented: $showingScore) {
-<<<<<<< HEAD
-            ScoreView(correctCount: self.correctCount, alarmManager: alarmManager, correct: $correct)
-        }
-=======
-            ScoreView(correctCount: self.correctCount, isCorrect: self.isCorrect)
+
+            ScoreView(correctCount: self.correctCount, alarmManager: alarmManager,isCorrect: self.$isCorrect)
         }
         
->>>>>>> main
+
     }
     
     private func loadQuiz() {
@@ -63,13 +56,12 @@ struct QuizView: View {
     private func checkAnswer(selectedIndex: Int) {
         if selectedIndex - 1 == Int(quizArray[1]) {
             correctCount += 1
-<<<<<<< HEAD
-            correct = true
-=======
+
+
             isCorrect = true
         }else{
             isCorrect = false
->>>>>>> main
+
         }
         
         quizCount += 1
@@ -96,7 +88,7 @@ struct QuizView: View {
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
         @State var correct = true
-                ScoreView(correctCount: 0, alarmManager: AlarmManager(), correct: $correct)
+        ScoreView(correctCount: 0, alarmManager: AlarmManager(), isCorrect: $isCorrect)
             }
     }
 

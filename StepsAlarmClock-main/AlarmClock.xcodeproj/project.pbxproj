@@ -28,7 +28,7 @@
 		8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyBackground.swift; sourceTree = "<group>"; };
 		8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyBackGround.swift; sourceTree = "<group>"; };
 		8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
-		8A30EE232BF488BF00296C6E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = QuizView.swift; path = ../QuizView.swift; sourceTree = "<group>"; };
+		8A30EE232BF488BF00296C6E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		8A30EE302BF4EA4F00296C6E /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		D153E0522BA3FA8C00529615 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockApp.swift; sourceTree = "<group>"; };
@@ -59,7 +59,6 @@
 		8A30EE2F2BF48D2500296C6E /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				8A30EE232BF488BF00296C6E /* QuizView.swift */,
 				8A30EE302BF4EA4F00296C6E /* ScoreView.swift */,
 				8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */,
 				8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */,
@@ -92,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				D153E06E2BABC79100529615 /* Info.plist */,
+				8A30EE232BF488BF00296C6E /* QuizView.swift */,
 				D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */,
 				D153E0572BA3FA8C00529615 /* ContentView.swift */,
 				8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */,
