@@ -41,7 +41,7 @@ struct QuizView: View {
         }
         .sheet(isPresented: $showingScore) {
 
-            ScoreView(correctCount: self.correctCount, alarmManager: alarmManager,isCorrect: self.$isCorrect)
+            ScoreView(correctCount: self.correctCount, alarmManager: alarmManager,isCorrect: self.isCorrect)
         }
         
 
@@ -85,10 +85,16 @@ struct QuizView: View {
     }
 }
 
+//struct QuizView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        @State var correct = true
+//        ScoreView(correctCount: 0, alarmManager: AlarmManager(), isCorrect: $isCorrect)
+//            }
+//    }
+
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
-        @State var correct = true
-        ScoreView(correctCount: 0, alarmManager: AlarmManager(), isCorrect: $isCorrect)
-            }
+        QuizView(alarmManager: AlarmManager())
     }
+}
 

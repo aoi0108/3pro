@@ -23,7 +23,7 @@ struct MainView: View {
                     .frame(width: 200, height: 200) // フレームサイズを設定
                     .padding()
                 HStack {
-                    NavigationLink(destination: ContentView(correct: $correct)) {
+                    NavigationLink(destination: ContentView()) {
                         Text("アラームを設定する")
                             .foregroundColor(.blue)
                             .font(.title)
@@ -45,41 +45,41 @@ struct MainView: View {
     func selectImageName(for count: Int) -> String {
          switch count {
          case 0:
-             return "image/coffeecup"
+             return "coffeecup"
          case 1:
-             return "image/coffee-jelly"
+             return "coffee-jelly"
          case 2:
-             return "image/end-jelly"
+             return "end-jelly"
          case 3:
-             return "image/coffeecup"
+             return "coffeecup"
          case 4:
-             return "image/pudding"
+             return "pudding"
          case 5:
-             return "image/pudding-cream"
+             return "pudding-cream"
          case 6:
-             return "image/pudding-end"
+             return "pudding-end"
          case 7:
-             return "image/sodacup"
+             return "sodacup"
          case 8:
-             return "image/soda-ice"
+             return "soda-ice"
          case 9:
-             return "image/soda-soda"
+             return "soda-soda"
          case 10:
-             return "image/soda-float"
+             return "soda-float"
          case 11:
-             return "image/soda-fin"
+             return "soda-fin"
          case 12:
-             return "image/sodacup"
+             return "sodacup"
          case 13:
-             return "image/parfeit-cereal"
+             return "parfeit-cereal"
          case 14:
-             return "image/parfeit-ice"
+             return "parfeit-ice"
          case 15:
-             return "image/parfeit-cream"
+             return "parfeit-cream"
          case 16:
-             return "image/parfeit-berry"
+             return "parfeit-berry"
          case 17:
-             return "image/parfeit-fin"
+             return "parfeit-fin"
              
          default:
              return "neko"
