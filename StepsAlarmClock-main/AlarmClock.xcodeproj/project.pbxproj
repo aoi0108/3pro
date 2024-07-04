@@ -22,6 +22,22 @@
 		D153E0782BAD780100529615 /* MPVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0772BAD780100529615 /* MPVolume.swift */; };
 		FE3EA5E32BF47CDC002F649E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EA5E22BF47CDC002F649E /* MainView.swift */; };
 		FE3EA5E72BF47F8A002F649E /* neko.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EA5E62BF47F8A002F649E /* neko.png */; };
+		FEA534FD2C3753C70005171E /* coffee-jelly.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534EC2C3753C70005171E /* coffee-jelly.png */; };
+		FEA534FE2C3753C70005171E /* coffeecup.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534ED2C3753C70005171E /* coffeecup.png */; };
+		FEA534FF2C3753C70005171E /* end-jelly.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534EE2C3753C70005171E /* end-jelly.png */; };
+		FEA535002C3753C70005171E /* parfeit-berry.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534EF2C3753C70005171E /* parfeit-berry.png */; };
+		FEA535012C3753C70005171E /* parfeit-cereal.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F02C3753C70005171E /* parfeit-cereal.png */; };
+		FEA535022C3753C70005171E /* parfeit-cream.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F12C3753C70005171E /* parfeit-cream.png */; };
+		FEA535032C3753C70005171E /* parfeit-fin.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F22C3753C70005171E /* parfeit-fin.png */; };
+		FEA535042C3753C70005171E /* parfeit-ice.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F32C3753C70005171E /* parfeit-ice.png */; };
+		FEA535052C3753C70005171E /* pudding-cream.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F42C3753C70005171E /* pudding-cream.png */; };
+		FEA535062C3753C70005171E /* pudding-end.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F52C3753C70005171E /* pudding-end.png */; };
+		FEA535072C3753C70005171E /* pudding.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F62C3753C70005171E /* pudding.png */; };
+		FEA535082C3753C70005171E /* soda-fin.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F72C3753C70005171E /* soda-fin.png */; };
+		FEA535092C3753C70005171E /* soda-float.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F82C3753C70005171E /* soda-float.png */; };
+		FEA5350A2C3753C70005171E /* soda-ice.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F92C3753C70005171E /* soda-ice.png */; };
+		FEA5350B2C3753C70005171E /* soda-soda.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534FA2C3753C70005171E /* soda-soda.png */; };
+		FEA5350C2C3753C70005171E /* sodacup.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534FB2C3753C70005171E /* sodacup.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +58,22 @@
 		D153E0772BAD780100529615 /* MPVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVolume.swift; sourceTree = "<group>"; };
 		FE3EA5E22BF47CDC002F649E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE3EA5E62BF47F8A002F649E /* neko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neko.png; sourceTree = "<group>"; };
+		FEA534EC2C3753C70005171E /* coffee-jelly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee-jelly.png"; sourceTree = "<group>"; };
+		FEA534ED2C3753C70005171E /* coffeecup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffeecup.png; sourceTree = "<group>"; };
+		FEA534EE2C3753C70005171E /* end-jelly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "end-jelly.png"; sourceTree = "<group>"; };
+		FEA534EF2C3753C70005171E /* parfeit-berry.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parfeit-berry.png"; sourceTree = "<group>"; };
+		FEA534F02C3753C70005171E /* parfeit-cereal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parfeit-cereal.png"; sourceTree = "<group>"; };
+		FEA534F12C3753C70005171E /* parfeit-cream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parfeit-cream.png"; sourceTree = "<group>"; };
+		FEA534F22C3753C70005171E /* parfeit-fin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parfeit-fin.png"; sourceTree = "<group>"; };
+		FEA534F32C3753C70005171E /* parfeit-ice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parfeit-ice.png"; sourceTree = "<group>"; };
+		FEA534F42C3753C70005171E /* pudding-cream.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pudding-cream.png"; sourceTree = "<group>"; };
+		FEA534F52C3753C70005171E /* pudding-end.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pudding-end.png"; sourceTree = "<group>"; };
+		FEA534F62C3753C70005171E /* pudding.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pudding.png; sourceTree = "<group>"; };
+		FEA534F72C3753C70005171E /* soda-fin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-fin.png"; sourceTree = "<group>"; };
+		FEA534F82C3753C70005171E /* soda-float.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-float.png"; sourceTree = "<group>"; };
+		FEA534F92C3753C70005171E /* soda-ice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-ice.png"; sourceTree = "<group>"; };
+		FEA534FA2C3753C70005171E /* soda-soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-soda.png"; sourceTree = "<group>"; };
+		FEA534FB2C3753C70005171E /* sodacup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sodacup.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +122,7 @@
 		D153E0542BA3FA8C00529615 /* AlarmClock */ = {
 			isa = PBXGroup;
 			children = (
+				FEA534FC2C3753C70005171E /* image */,
 				D153E06E2BABC79100529615 /* Info.plist */,
 				8A30EE232BF488BF00296C6E /* QuizView.swift */,
 				D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */,
@@ -118,6 +151,29 @@
 				D153E06C2BABC3EB00529615 /* CoreMotion.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FEA534FC2C3753C70005171E /* image */ = {
+			isa = PBXGroup;
+			children = (
+				FEA534EC2C3753C70005171E /* coffee-jelly.png */,
+				FEA534ED2C3753C70005171E /* coffeecup.png */,
+				FEA534EE2C3753C70005171E /* end-jelly.png */,
+				FEA534EF2C3753C70005171E /* parfeit-berry.png */,
+				FEA534F02C3753C70005171E /* parfeit-cereal.png */,
+				FEA534F12C3753C70005171E /* parfeit-cream.png */,
+				FEA534F22C3753C70005171E /* parfeit-fin.png */,
+				FEA534F32C3753C70005171E /* parfeit-ice.png */,
+				FEA534F42C3753C70005171E /* pudding-cream.png */,
+				FEA534F52C3753C70005171E /* pudding-end.png */,
+				FEA534F62C3753C70005171E /* pudding.png */,
+				FEA534F72C3753C70005171E /* soda-fin.png */,
+				FEA534F82C3753C70005171E /* soda-float.png */,
+				FEA534F92C3753C70005171E /* soda-ice.png */,
+				FEA534FA2C3753C70005171E /* soda-soda.png */,
+				FEA534FB2C3753C70005171E /* sodacup.png */,
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,8 +234,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEA534FE2C3753C70005171E /* coffeecup.png in Resources */,
+				FEA5350B2C3753C70005171E /* soda-soda.png in Resources */,
+				FEA535072C3753C70005171E /* pudding.png in Resources */,
+				FEA535012C3753C70005171E /* parfeit-cereal.png in Resources */,
+				FEA535002C3753C70005171E /* parfeit-berry.png in Resources */,
+				FEA5350A2C3753C70005171E /* soda-ice.png in Resources */,
+				FEA535032C3753C70005171E /* parfeit-fin.png in Resources */,
+				FEA535062C3753C70005171E /* pudding-end.png in Resources */,
+				FEA535052C3753C70005171E /* pudding-cream.png in Resources */,
+				FEA534FD2C3753C70005171E /* coffee-jelly.png in Resources */,
 				D153E05D2BA3FA8F00529615 /* Preview Assets.xcassets in Resources */,
+				FEA535042C3753C70005171E /* parfeit-ice.png in Resources */,
 				D153E05A2BA3FA8F00529615 /* Assets.xcassets in Resources */,
+				FEA535092C3753C70005171E /* soda-float.png in Resources */,
+				FEA535082C3753C70005171E /* soda-fin.png in Resources */,
+				FEA5350C2C3753C70005171E /* sodacup.png in Resources */,
+				FEA534FF2C3753C70005171E /* end-jelly.png in Resources */,
+				FEA535022C3753C70005171E /* parfeit-cream.png in Resources */,
 				FE3EA5E72BF47F8A002F649E /* neko.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
