@@ -38,7 +38,7 @@ struct MainView: View {
                
             }
             
-            
+            .navigationBarBackButtonHidden(true) // これで戻るボタンを隠す
         }
         
     }
