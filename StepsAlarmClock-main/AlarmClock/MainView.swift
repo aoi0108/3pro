@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     @AppStorage("score") var correctCount : Int = 0
     @State private var correct: Bool = false
+    
     var body: some View {
         
         NavigationStack{
