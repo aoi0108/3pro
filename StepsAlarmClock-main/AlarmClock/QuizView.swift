@@ -8,6 +8,7 @@ struct QuizView: View {
     @State private var selectedAnswerIndex: Int?
     @ObservedObject var alarmManager: AlarmManager
     @State var isCorrect = false
+    @State private var navigateToMainView = false
     
     let csvArray: [String] = [
         "John Smith, a well-respected entrepreneur, _______ his latest venture at the conference last week./2/launching/launched/launch/to launch/",
@@ -48,10 +49,21 @@ struct QuizView: View {
         .onAppear {
             self.loadQuiz()
         }
-        .sheet(isPresented: $showingScore) {
-            ScoreView(correctCount: self.correctCount, alarmManager: alarmManager, isCorrect: self.isCorrect)
-        }
-    }
+        .sheet(isPresented: $showingScore, onDismiss: {
+                       if isCorrect {
+                           navigateToMainView = true
+                       }
+                   }) {
+                       ScoreView(correctCount: self.correctCount, alarmManager: alarmManager, isCorrect: self.isCorrect)
+                   }
+                   
+                   NavigationLink(
+                       destination: MainView(),
+                       isActive: $navigateToMainView,
+                       label: { EmptyView() }
+                   )
+               }
+           
     
     private func loadQuiz() {
         if !csvArray.isEmpty {

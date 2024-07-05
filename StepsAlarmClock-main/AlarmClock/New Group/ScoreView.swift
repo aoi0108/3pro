@@ -1,15 +1,13 @@
 import SwiftUI
 import MediaPlayer
 import AudioToolbox
-import SwiftUI
-
 
 struct ScoreView: View {
     let correctCount: Int
-    @ObservedObject var alarmManager: AlarmManager // alarmManagerをプロパティとして追加
+    @ObservedObject var alarmManager: AlarmManager
     let isCorrect: Bool
- 
-    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+
     var body: some View {
         NavigationView {
             ZStack {
@@ -32,6 +30,7 @@ struct ScoreView: View {
                     if isCorrect {
                         Button {
                             stopAlarm()
+                            presentationMode.wrappedValue.dismiss()
                         } label: {
                             Text("アラーム停止")
                                 .font(.title)
@@ -39,10 +38,9 @@ struct ScoreView: View {
                         }
                     }
                 }
-                
-              
             }
         }
+        .navigationBarHidden(true)
     }
     
     private func stopAlarm() {
