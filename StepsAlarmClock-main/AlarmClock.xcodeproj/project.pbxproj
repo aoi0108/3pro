@@ -40,6 +40,8 @@
 		FEA5350A2C3753C70005171E /* soda-ice.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F92C3753C70005171E /* soda-ice.png */; };
 		FEA5350B2C3753C70005171E /* soda-soda.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534FA2C3753C70005171E /* soda-soda.png */; };
 		FEA5350C2C3753C70005171E /* sodacup.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534FB2C3753C70005171E /* sodacup.png */; };
+		FEE0D4A42C8F09E000947C6B /* HowToUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0D4A32C8F09E000947C6B /* HowToUse.swift */; };
+		FEE0D4A62C8F09F900947C6B /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0D4A52C8F09F900947C6B /* Collection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,8 @@
 		FEA534F92C3753C70005171E /* soda-ice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-ice.png"; sourceTree = "<group>"; };
 		FEA534FA2C3753C70005171E /* soda-soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-soda.png"; sourceTree = "<group>"; };
 		FEA534FB2C3753C70005171E /* sodacup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sodacup.png; sourceTree = "<group>"; };
+		FEE0D4A32C8F09E000947C6B /* HowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUse.swift; sourceTree = "<group>"; };
+		FEE0D4A52C8F09F900947C6B /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 				8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */,
 				D153E0632BA408A500529615 /* SetTimeView.swift */,
 				FE3EA5E22BF47CDC002F649E /* MainView.swift */,
+				FEE0D4A52C8F09F900947C6B /* Collection.swift */,
+				FEE0D4A32C8F09E000947C6B /* HowToUse.swift */,
 				FE3EA5E62BF47F8A002F649E /* neko.png */,
 				D153E0592BA3FA8F00529615 /* Assets.xcassets */,
 				D153E05B2BA3FA8F00529615 /* Preview Content */,
@@ -275,7 +281,9 @@
 				D153E0582BA3FA8C00529615 /* ContentView.swift in Sources */,
 				D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */,
 				8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */,
+				FEE0D4A62C8F09F900947C6B /* Collection.swift in Sources */,
 				8A1EFDF62C07C47000008AB5 /* AlarmManager.swift in Sources */,
+				FEE0D4A42C8F09E000947C6B /* HowToUse.swift in Sources */,
 				D153E0762BAC2ABF00529615 /* AppDelegate.swift in Sources */,
 				8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */,
 				8ADC69982C37B67F0060DF62 /* csvReader.swift in Sources */,
@@ -415,7 +423,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmClock/Preview Content\"";
-				DEVELOPMENT_TEAM = G3Y54DBA6F;
+				DEVELOPMENT_TEAM = QV9626CYR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlarmClock/Info.plist;
@@ -447,7 +455,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmClock/Preview Content\"";
-				DEVELOPMENT_TEAM = G3Y54DBA6F;
+				DEVELOPMENT_TEAM = QV9626CYR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlarmClock/Info.plist;
