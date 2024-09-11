@@ -13,7 +13,7 @@
 		8A30EE242BF488BF00296C6E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE232BF488BF00296C6E /* QuizView.swift */; };
 		8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE302BF4EA4F00296C6E /* ScoreView.swift */; };
 		8ADC69982C37B67F0060DF62 /* csvReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC69972C37B67F0060DF62 /* csvReader.swift */; };
-		8ADC699A2C37B6F80060DF62 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC69992C37B6F80060DF62 /* quiz.csv */; };
+		8AF503462C9170AB005ADBF9 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8AF503452C9170AB005ADBF9 /* quiz.csv */; };
 		D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */; };
 		D153E0582BA3FA8C00529615 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0572BA3FA8C00529615 /* ContentView.swift */; };
 		D153E05A2BA3FA8F00529615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D153E0592BA3FA8F00529615 /* Assets.xcassets */; };
@@ -49,7 +49,7 @@
 		8A30EE232BF488BF00296C6E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		8A30EE302BF4EA4F00296C6E /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		8ADC69972C37B67F0060DF62 /* csvReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = csvReader.swift; sourceTree = "<group>"; };
-		8ADC69992C37B6F80060DF62 /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
+		8AF503452C9170AB005ADBF9 /* quiz.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
 		D153E0522BA3FA8C00529615 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockApp.swift; sourceTree = "<group>"; };
 		D153E0572BA3FA8C00529615 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,8 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				8A30EE2F2BF48D2500296C6E /* New Group */,
-				D153E0772BAD780100529615 /* MPVolume.swift */,
 				D153E0752BAC2ABE00529615 /* AppDelegate.swift */,
+				D153E0772BAD780100529615 /* MPVolume.swift */,
 				D153E0542BA3FA8C00529615 /* AlarmClock */,
 				D153E0532BA3FA8C00529615 /* Products */,
 				D153E06B2BABC3EA00529615 /* Frameworks */,
@@ -129,7 +129,7 @@
 				FEA534FC2C3753C70005171E /* image */,
 				D153E06E2BABC79100529615 /* Info.plist */,
 				8A30EE232BF488BF00296C6E /* QuizView.swift */,
-				8ADC69992C37B6F80060DF62 /* quiz.csv */,
+				8AF503452C9170AB005ADBF9 /* quiz.csv */,
 				8ADC69972C37B67F0060DF62 /* csvReader.swift */,
 				D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */,
 				D153E0572BA3FA8C00529615 /* ContentView.swift */,
@@ -247,8 +247,8 @@
 				FEA535002C3753C70005171E /* parfeit-berry.png in Resources */,
 				FEA5350A2C3753C70005171E /* soda-ice.png in Resources */,
 				FEA535032C3753C70005171E /* parfeit-fin.png in Resources */,
-				8ADC699A2C37B6F80060DF62 /* quiz.csv in Resources */,
 				FEA535062C3753C70005171E /* pudding-end.png in Resources */,
+				8AF503462C9170AB005ADBF9 /* quiz.csv in Resources */,
 				FEA535052C3753C70005171E /* pudding-cream.png in Resources */,
 				FEA534FD2C3753C70005171E /* coffee-jelly.png in Resources */,
 				D153E05D2BA3FA8F00529615 /* Preview Assets.xcassets in Resources */,
