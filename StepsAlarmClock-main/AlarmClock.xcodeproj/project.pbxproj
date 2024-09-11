@@ -15,7 +15,7 @@
 		8ADC69982C37B67F0060DF62 /* csvReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC69972C37B67F0060DF62 /* csvReader.swift */; };
 		8AF503462C9170AB005ADBF9 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8AF503452C9170AB005ADBF9 /* quiz.csv */; };
 		D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */; };
-		D153E0582BA3FA8C00529615 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0572BA3FA8C00529615 /* ContentView.swift */; };
+		D153E0582BA3FA8C00529615 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0572BA3FA8C00529615 /* AlarmView.swift */; };
 		D153E05A2BA3FA8F00529615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D153E0592BA3FA8F00529615 /* Assets.xcassets */; };
 		D153E05D2BA3FA8F00529615 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D153E05C2BA3FA8F00529615 /* Preview Assets.xcassets */; };
 		D153E0642BA408A500529615 /* SetTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0632BA408A500529615 /* SetTimeView.swift */; };
@@ -52,12 +52,12 @@
 		8AF503452C9170AB005ADBF9 /* quiz.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
 		D153E0522BA3FA8C00529615 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockApp.swift; sourceTree = "<group>"; };
-		D153E0572BA3FA8C00529615 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D153E0572BA3FA8C00529615 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		D153E0592BA3FA8F00529615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D153E05C2BA3FA8F00529615 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D153E0632BA408A500529615 /* SetTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeView.swift; sourceTree = "<group>"; };
 		D153E06C2BABC3EB00529615 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		D153E06E2BABC79100529615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D153E06E2BABC79100529615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D153E0752BAC2ABE00529615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D153E0772BAD780100529615 /* MPVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVolume.swift; sourceTree = "<group>"; };
 		FE3EA5E22BF47CDC002F649E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -92,21 +92,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A30EE2F2BF48D2500296C6E /* New Group */ = {
+		8A30EE2F2BF48D2500296C6E /* ScoreView */ = {
 			isa = PBXGroup;
 			children = (
 				8A30EE302BF4EA4F00296C6E /* ScoreView.swift */,
 				8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */,
 				8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */,
 			);
-			name = "New Group";
-			path = "AlarmClock/New Group";
+			path = ScoreView;
+			sourceTree = "<group>";
+		};
+		8AF503472C91807A005ADBF9 /*  UI */ = {
+			isa = PBXGroup;
+			children = (
+				8A30EE2F2BF48D2500296C6E /* ScoreView */,
+				8A30EE232BF488BF00296C6E /* QuizView.swift */,
+				D153E0572BA3FA8C00529615 /* AlarmView.swift */,
+				D153E0632BA408A500529615 /* SetTimeView.swift */,
+				FE3EA5E22BF47CDC002F649E /* MainView.swift */,
+			);
+			path = " UI";
 			sourceTree = "<group>";
 		};
 		D153E0492BA3FA8B00529615 = {
 			isa = PBXGroup;
 			children = (
-				8A30EE2F2BF48D2500296C6E /* New Group */,
 				D153E0752BAC2ABE00529615 /* AppDelegate.swift */,
 				D153E0772BAD780100529615 /* MPVolume.swift */,
 				D153E0542BA3FA8C00529615 /* AlarmClock */,
@@ -126,18 +136,14 @@
 		D153E0542BA3FA8C00529615 /* AlarmClock */ = {
 			isa = PBXGroup;
 			children = (
-				FEA534FC2C3753C70005171E /* image */,
 				D153E06E2BABC79100529615 /* Info.plist */,
-				8A30EE232BF488BF00296C6E /* QuizView.swift */,
 				8AF503452C9170AB005ADBF9 /* quiz.csv */,
+				8AF503472C91807A005ADBF9 /*  UI */,
 				8ADC69972C37B67F0060DF62 /* csvReader.swift */,
 				D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */,
-				D153E0572BA3FA8C00529615 /* ContentView.swift */,
 				8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */,
-				D153E0632BA408A500529615 /* SetTimeView.swift */,
-				FE3EA5E22BF47CDC002F649E /* MainView.swift */,
-				FE3EA5E62BF47F8A002F649E /* neko.png */,
 				D153E0592BA3FA8F00529615 /* Assets.xcassets */,
+				FEA534FC2C3753C70005171E /* image */,
 				D153E05B2BA3FA8F00529615 /* Preview Content */,
 			);
 			path = AlarmClock;
@@ -162,6 +168,7 @@
 		FEA534FC2C3753C70005171E /* image */ = {
 			isa = PBXGroup;
 			children = (
+				FE3EA5E62BF47F8A002F649E /* neko.png */,
 				FEA534EC2C3753C70005171E /* coffee-jelly.png */,
 				FEA534ED2C3753C70005171E /* coffeecup.png */,
 				FEA534EE2C3753C70005171E /* end-jelly.png */,
@@ -272,7 +279,7 @@
 			files = (
 				D153E0782BAD780100529615 /* MPVolume.swift in Sources */,
 				FE3EA5E32BF47CDC002F649E /* MainView.swift in Sources */,
-				D153E0582BA3FA8C00529615 /* ContentView.swift in Sources */,
+				D153E0582BA3FA8C00529615 /* AlarmView.swift in Sources */,
 				D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */,
 				8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */,
 				8A1EFDF62C07C47000008AB5 /* AlarmManager.swift in Sources */,

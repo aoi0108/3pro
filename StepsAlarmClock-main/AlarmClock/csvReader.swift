@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct CSVReader {
     static func readCSV(fileName: String) -> [String] {
         guard let path = Bundle.main.path(forResource: fileName, ofType: "csv") else {
