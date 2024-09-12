@@ -24,7 +24,7 @@ struct MainView: View {
                     .frame(width: 200, height: 200) // フレームサイズを設定
                     .padding()
                 HStack {
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: AlarmView()) {
                         Text("アラームを設定する")
                             .foregroundColor(.blue)
                             .font(.title)
