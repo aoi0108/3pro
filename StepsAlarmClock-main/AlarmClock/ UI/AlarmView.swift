@@ -54,6 +54,7 @@ struct AlarmView: View {
             }
             .preferredColorScheme(.light)
         }
+        
         // テストモードを切り替えるスイッチ
         Toggle("テストモード", isOn: $alarmManager.isTestMode)
             .padding()

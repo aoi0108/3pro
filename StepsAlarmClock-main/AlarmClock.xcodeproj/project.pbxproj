@@ -24,6 +24,8 @@
 		D153E0782BAD780100529615 /* MPVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0772BAD780100529615 /* MPVolume.swift */; };
 		FE3EA5E32BF47CDC002F649E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EA5E22BF47CDC002F649E /* MainView.swift */; };
 		FE3EA5E72BF47F8A002F649E /* neko.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EA5E62BF47F8A002F649E /* neko.png */; };
+		FE7FA16E2C932B510060A3C4 /* HowToUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7FA16D2C932B510060A3C4 /* HowToUse.swift */; };
+		FE7FA1702C932BDD0060A3C4 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7FA16F2C932BDD0060A3C4 /* Collection.swift */; };
 		FEA534FD2C3753C70005171E /* coffee-jelly.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534EC2C3753C70005171E /* coffee-jelly.png */; };
 		FEA534FE2C3753C70005171E /* coffeecup.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534ED2C3753C70005171E /* coffeecup.png */; };
 		FEA534FF2C3753C70005171E /* end-jelly.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534EE2C3753C70005171E /* end-jelly.png */; };
@@ -62,6 +64,8 @@
 		D153E0772BAD780100529615 /* MPVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVolume.swift; sourceTree = "<group>"; };
 		FE3EA5E22BF47CDC002F649E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE3EA5E62BF47F8A002F649E /* neko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neko.png; sourceTree = "<group>"; };
+		FE7FA16D2C932B510060A3C4 /* HowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUse.swift; sourceTree = "<group>"; };
+		FE7FA16F2C932BDD0060A3C4 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		FEA534EC2C3753C70005171E /* coffee-jelly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee-jelly.png"; sourceTree = "<group>"; };
 		FEA534ED2C3753C70005171E /* coffeecup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffeecup.png; sourceTree = "<group>"; };
 		FEA534EE2C3753C70005171E /* end-jelly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "end-jelly.png"; sourceTree = "<group>"; };
@@ -78,6 +82,8 @@
 		FEA534F92C3753C70005171E /* soda-ice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-ice.png"; sourceTree = "<group>"; };
 		FEA534FA2C3753C70005171E /* soda-soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-soda.png"; sourceTree = "<group>"; };
 		FEA534FB2C3753C70005171E /* sodacup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sodacup.png; sourceTree = "<group>"; };
+		FEE0D4A32C8F09E000947C6B /* HowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUse.swift; sourceTree = "<group>"; };
+		FEE0D4A52C8F09F900947C6B /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,8 @@
 				D153E0572BA3FA8C00529615 /* AlarmView.swift */,
 				D153E0632BA408A500529615 /* SetTimeView.swift */,
 				FE3EA5E22BF47CDC002F649E /* MainView.swift */,
+				FE7FA16F2C932BDD0060A3C4 /* Collection.swift */,
+				FE7FA16D2C932B510060A3C4 /* HowToUse.swift */,
 			);
 			path = " UI";
 			sourceTree = "<group>";
@@ -122,6 +130,7 @@
 				D153E0542BA3FA8C00529615 /* AlarmClock */,
 				D153E0532BA3FA8C00529615 /* Products */,
 				D153E06B2BABC3EA00529615 /* Frameworks */,
+				FE7FA16C2C932A990060A3C4 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +172,15 @@
 				D153E06C2BABC3EB00529615 /* CoreMotion.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE7FA16C2C932A990060A3C4 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0D4A52C8F09F900947C6B /* Collection.swift */,
+				FEE0D4A32C8F09E000947C6B /* HowToUse.swift */,
+			);
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
 		FEA534FC2C3753C70005171E /* image */ = {
@@ -283,6 +301,8 @@
 				D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */,
 				8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */,
 				8A1EFDF62C07C47000008AB5 /* AlarmManager.swift in Sources */,
+				FE7FA1702C932BDD0060A3C4 /* Collection.swift in Sources */,
+				FE7FA16E2C932B510060A3C4 /* HowToUse.swift in Sources */,
 				D153E0762BAC2ABF00529615 /* AppDelegate.swift in Sources */,
 				8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */,
 				8ADC69982C37B67F0060DF62 /* csvReader.swift in Sources */,
@@ -422,7 +442,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmClock/Preview Content\"";
-				DEVELOPMENT_TEAM = G3Y54DBA6F;
+				DEVELOPMENT_TEAM = QV9626CYR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlarmClock/Info.plist;
@@ -454,7 +474,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmClock/Preview Content\"";
-				DEVELOPMENT_TEAM = G3Y54DBA6F;
+				DEVELOPMENT_TEAM = QV9626CYR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlarmClock/Info.plist;
