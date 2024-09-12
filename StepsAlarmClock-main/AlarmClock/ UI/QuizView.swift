@@ -25,6 +25,7 @@ struct QuizView: View {
                     Button(action: {
                         self.selectedAnswerIndex = index
                         self.checkAnswer(selectedIndex: index)
+                        print("index:\(index)")
                     }) {
                         Text(self.answers[index])
                             .padding()
@@ -73,6 +74,8 @@ struct QuizView: View {
         if selectedIndex == correctAnswerIndex {
             correctCount += 1
             isCorrect = true
+            print("あなたの回答:selectedIndex\(selectedIndex)")
+            print("正解：correctAnswerIndex\(correctAnswerIndex)")
         } else {
             isCorrect = false
         }

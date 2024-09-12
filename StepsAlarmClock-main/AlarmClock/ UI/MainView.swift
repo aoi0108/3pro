@@ -50,7 +50,7 @@ struct MainView: View {
                                )
                        }
                     
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: AlarmView()) {
                         Image(systemName: "clock")
                                                    .font(.title) // アイコンのサイズ
                                                    .foregroundColor(Color(red: 162/255, green: 119/255, blue: 6/255))
@@ -60,6 +60,7 @@ struct MainView: View {
                                                    .overlay(
                                                        RoundedRectangle(cornerRadius: 20)
                                                         .stroke(Color(red: 162/255, green: 119/255, blue: 6/255), lineWidth: 2) // 枠線の色と太さを指定
+
                             )
 
                     }

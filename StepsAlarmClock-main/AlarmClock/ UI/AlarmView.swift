@@ -5,7 +5,7 @@ import CoreMotion
 import AVFoundation
 import MediaPlayer
 
-struct ContentView: View {
+struct AlarmView: View {
     @StateObject private var alarmManager = AlarmManager() // AlarmManagerのインスタンスを状態オブジェクトとして保持
     @State private var isShowSetTimeView = false // 時刻設定ビューの表示状態を管理
     @State private var myTimer = Date()
@@ -66,11 +66,11 @@ struct ContentView: View {
 }
 
 // プレビュー
-struct ContentView_Previews: PreviewProvider {
+struct AlarmView_Previews: PreviewProvider {
     @State static var correct = true
     
     static var previews: some View {
-        ContentView()
+        AlarmView()
             .environmentObject(AlarmManager()) // プレビューで環境オブジェクトを設定
     }
 }

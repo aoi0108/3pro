@@ -13,9 +13,9 @@
 		8A30EE242BF488BF00296C6E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE232BF488BF00296C6E /* QuizView.swift */; };
 		8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE302BF4EA4F00296C6E /* ScoreView.swift */; };
 		8ADC69982C37B67F0060DF62 /* csvReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC69972C37B67F0060DF62 /* csvReader.swift */; };
-		8ADC699A2C37B6F80060DF62 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8ADC69992C37B6F80060DF62 /* quiz.csv */; };
+		8AF503462C9170AB005ADBF9 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8AF503452C9170AB005ADBF9 /* quiz.csv */; };
 		D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */; };
-		D153E0582BA3FA8C00529615 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0572BA3FA8C00529615 /* ContentView.swift */; };
+		D153E0582BA3FA8C00529615 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0572BA3FA8C00529615 /* AlarmView.swift */; };
 		D153E05A2BA3FA8F00529615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D153E0592BA3FA8F00529615 /* Assets.xcassets */; };
 		D153E05D2BA3FA8F00529615 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D153E05C2BA3FA8F00529615 /* Preview Assets.xcassets */; };
 		D153E0642BA408A500529615 /* SetTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0632BA408A500529615 /* SetTimeView.swift */; };
@@ -24,6 +24,8 @@
 		D153E0782BAD780100529615 /* MPVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0772BAD780100529615 /* MPVolume.swift */; };
 		FE3EA5E32BF47CDC002F649E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EA5E22BF47CDC002F649E /* MainView.swift */; };
 		FE3EA5E72BF47F8A002F649E /* neko.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EA5E62BF47F8A002F649E /* neko.png */; };
+		FE7FA16E2C932B510060A3C4 /* HowToUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7FA16D2C932B510060A3C4 /* HowToUse.swift */; };
+		FE7FA1702C932BDD0060A3C4 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7FA16F2C932BDD0060A3C4 /* Collection.swift */; };
 		FEA534FD2C3753C70005171E /* coffee-jelly.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534EC2C3753C70005171E /* coffee-jelly.png */; };
 		FEA534FE2C3753C70005171E /* coffeecup.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534ED2C3753C70005171E /* coffeecup.png */; };
 		FEA534FF2C3753C70005171E /* end-jelly.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534EE2C3753C70005171E /* end-jelly.png */; };
@@ -40,8 +42,6 @@
 		FEA5350A2C3753C70005171E /* soda-ice.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F92C3753C70005171E /* soda-ice.png */; };
 		FEA5350B2C3753C70005171E /* soda-soda.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534FA2C3753C70005171E /* soda-soda.png */; };
 		FEA5350C2C3753C70005171E /* sodacup.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534FB2C3753C70005171E /* sodacup.png */; };
-		FEE0D4A42C8F09E000947C6B /* HowToUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0D4A32C8F09E000947C6B /* HowToUse.swift */; };
-		FEE0D4A62C8F09F900947C6B /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE0D4A52C8F09F900947C6B /* Collection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,19 +51,21 @@
 		8A30EE232BF488BF00296C6E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		8A30EE302BF4EA4F00296C6E /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		8ADC69972C37B67F0060DF62 /* csvReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = csvReader.swift; sourceTree = "<group>"; };
-		8ADC69992C37B6F80060DF62 /* quiz.csv */ = {isa = PBXFileReference; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
+		8AF503452C9170AB005ADBF9 /* quiz.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
 		D153E0522BA3FA8C00529615 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockApp.swift; sourceTree = "<group>"; };
-		D153E0572BA3FA8C00529615 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D153E0572BA3FA8C00529615 /* AlarmView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmView.swift; sourceTree = "<group>"; };
 		D153E0592BA3FA8F00529615 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D153E05C2BA3FA8F00529615 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D153E0632BA408A500529615 /* SetTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetTimeView.swift; sourceTree = "<group>"; };
 		D153E06C2BABC3EB00529615 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		D153E06E2BABC79100529615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D153E06E2BABC79100529615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D153E0752BAC2ABE00529615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D153E0772BAD780100529615 /* MPVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVolume.swift; sourceTree = "<group>"; };
 		FE3EA5E22BF47CDC002F649E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE3EA5E62BF47F8A002F649E /* neko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neko.png; sourceTree = "<group>"; };
+		FE7FA16D2C932B510060A3C4 /* HowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUse.swift; sourceTree = "<group>"; };
+		FE7FA16F2C932BDD0060A3C4 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		FEA534EC2C3753C70005171E /* coffee-jelly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee-jelly.png"; sourceTree = "<group>"; };
 		FEA534ED2C3753C70005171E /* coffeecup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffeecup.png; sourceTree = "<group>"; };
 		FEA534EE2C3753C70005171E /* end-jelly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "end-jelly.png"; sourceTree = "<group>"; };
@@ -96,26 +98,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A30EE2F2BF48D2500296C6E /* New Group */ = {
+		8A30EE2F2BF48D2500296C6E /* ScoreView */ = {
 			isa = PBXGroup;
 			children = (
 				8A30EE302BF4EA4F00296C6E /* ScoreView.swift */,
 				8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */,
 				8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */,
 			);
-			name = "New Group";
-			path = "AlarmClock/New Group";
+			path = ScoreView;
+			sourceTree = "<group>";
+		};
+		8AF503472C91807A005ADBF9 /*  UI */ = {
+			isa = PBXGroup;
+			children = (
+				8A30EE2F2BF48D2500296C6E /* ScoreView */,
+				8A30EE232BF488BF00296C6E /* QuizView.swift */,
+				D153E0572BA3FA8C00529615 /* AlarmView.swift */,
+				D153E0632BA408A500529615 /* SetTimeView.swift */,
+				FE3EA5E22BF47CDC002F649E /* MainView.swift */,
+				FE7FA16F2C932BDD0060A3C4 /* Collection.swift */,
+				FE7FA16D2C932B510060A3C4 /* HowToUse.swift */,
+			);
+			path = " UI";
 			sourceTree = "<group>";
 		};
 		D153E0492BA3FA8B00529615 = {
 			isa = PBXGroup;
 			children = (
-				8A30EE2F2BF48D2500296C6E /* New Group */,
-				D153E0772BAD780100529615 /* MPVolume.swift */,
 				D153E0752BAC2ABE00529615 /* AppDelegate.swift */,
+				D153E0772BAD780100529615 /* MPVolume.swift */,
 				D153E0542BA3FA8C00529615 /* AlarmClock */,
 				D153E0532BA3FA8C00529615 /* Products */,
 				D153E06B2BABC3EA00529615 /* Frameworks */,
+				FE7FA16C2C932A990060A3C4 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,20 +145,14 @@
 		D153E0542BA3FA8C00529615 /* AlarmClock */ = {
 			isa = PBXGroup;
 			children = (
-				FEA534FC2C3753C70005171E /* image */,
 				D153E06E2BABC79100529615 /* Info.plist */,
-				8A30EE232BF488BF00296C6E /* QuizView.swift */,
-				8ADC69992C37B6F80060DF62 /* quiz.csv */,
+				8AF503452C9170AB005ADBF9 /* quiz.csv */,
+				8AF503472C91807A005ADBF9 /*  UI */,
 				8ADC69972C37B67F0060DF62 /* csvReader.swift */,
 				D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */,
-				D153E0572BA3FA8C00529615 /* ContentView.swift */,
 				8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */,
-				D153E0632BA408A500529615 /* SetTimeView.swift */,
-				FE3EA5E22BF47CDC002F649E /* MainView.swift */,
-				FEE0D4A52C8F09F900947C6B /* Collection.swift */,
-				FEE0D4A32C8F09E000947C6B /* HowToUse.swift */,
-				FE3EA5E62BF47F8A002F649E /* neko.png */,
 				D153E0592BA3FA8F00529615 /* Assets.xcassets */,
+				FEA534FC2C3753C70005171E /* image */,
 				D153E05B2BA3FA8F00529615 /* Preview Content */,
 			);
 			path = AlarmClock;
@@ -165,9 +174,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FE7FA16C2C932A990060A3C4 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				FEE0D4A52C8F09F900947C6B /* Collection.swift */,
+				FEE0D4A32C8F09E000947C6B /* HowToUse.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
 		FEA534FC2C3753C70005171E /* image */ = {
 			isa = PBXGroup;
 			children = (
+				FE3EA5E62BF47F8A002F649E /* neko.png */,
 				FEA534EC2C3753C70005171E /* coffee-jelly.png */,
 				FEA534ED2C3753C70005171E /* coffeecup.png */,
 				FEA534EE2C3753C70005171E /* end-jelly.png */,
@@ -253,8 +272,8 @@
 				FEA535002C3753C70005171E /* parfeit-berry.png in Resources */,
 				FEA5350A2C3753C70005171E /* soda-ice.png in Resources */,
 				FEA535032C3753C70005171E /* parfeit-fin.png in Resources */,
-				8ADC699A2C37B6F80060DF62 /* quiz.csv in Resources */,
 				FEA535062C3753C70005171E /* pudding-end.png in Resources */,
+				8AF503462C9170AB005ADBF9 /* quiz.csv in Resources */,
 				FEA535052C3753C70005171E /* pudding-cream.png in Resources */,
 				FEA534FD2C3753C70005171E /* coffee-jelly.png in Resources */,
 				D153E05D2BA3FA8F00529615 /* Preview Assets.xcassets in Resources */,
@@ -278,12 +297,12 @@
 			files = (
 				D153E0782BAD780100529615 /* MPVolume.swift in Sources */,
 				FE3EA5E32BF47CDC002F649E /* MainView.swift in Sources */,
-				D153E0582BA3FA8C00529615 /* ContentView.swift in Sources */,
+				D153E0582BA3FA8C00529615 /* AlarmView.swift in Sources */,
 				D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */,
 				8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */,
-				FEE0D4A62C8F09F900947C6B /* Collection.swift in Sources */,
 				8A1EFDF62C07C47000008AB5 /* AlarmManager.swift in Sources */,
-				FEE0D4A42C8F09E000947C6B /* HowToUse.swift in Sources */,
+				FE7FA1702C932BDD0060A3C4 /* Collection.swift in Sources */,
+				FE7FA16E2C932B510060A3C4 /* HowToUse.swift in Sources */,
 				D153E0762BAC2ABF00529615 /* AppDelegate.swift in Sources */,
 				8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */,
 				8ADC69982C37B67F0060DF62 /* csvReader.swift in Sources */,
