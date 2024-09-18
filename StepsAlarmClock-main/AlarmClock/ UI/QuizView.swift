@@ -72,15 +72,17 @@ struct QuizView: View {
     
     private func checkAnswer(selectedIndex: Int) {
         if selectedIndex == correctAnswerIndex {
-            correctCount += 1
+            // MainViewModelのcorrectCountを更新
+            viewModel.correctCount += 1
             isCorrect = true
+            // コレクションを更新
             viewModel.updateCollection()
-            print("あなたの回答:selectedIndex\(selectedIndex)")
-            print("正解：correctAnswerIndex\(correctAnswerIndex)")
+            print("あなたの回答: selectedIndex \(selectedIndex)")
+            print("正解: correctAnswerIndex \(correctAnswerIndex ?? -1)")
+            print("現在のcorrectCount: \(viewModel.correctCount)")
         } else {
             isCorrect = false
         }
-        
         showingScore = true
     }
     
@@ -95,7 +97,6 @@ struct QuizView: View {
         return Color.gray
     }
 }
-
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
