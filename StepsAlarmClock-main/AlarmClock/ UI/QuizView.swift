@@ -11,7 +11,7 @@ struct QuizView: View {
     @ObservedObject var alarmManager: AlarmManager
     @State var isCorrect = false
     @State private var navigateToMainView = false
-    
+    @ObservedObject var viewModel: MainViewModel
     let csvFileName = "quiz"
     
     var body: some View {
@@ -72,14 +72,17 @@ struct QuizView: View {
     
     private func checkAnswer(selectedIndex: Int) {
         if selectedIndex == correctAnswerIndex {
-            correctCount += 1
+            // MainViewModelのcorrectCountを更新
+            viewModel.correctCount += 1
             isCorrect = true
-            print("あなたの回答:selectedIndex\(selectedIndex)")
-            print("正解：correctAnswerIndex\(correctAnswerIndex)")
+            // コレクションを更新
+            viewModel.updateCollection()
+            print("あなたの回答: selectedIndex \(selectedIndex)")
+            print("正解: correctAnswerIndex \(correctAnswerIndex ?? -1)")
+            print("現在のcorrectCount: \(viewModel.correctCount)")
         } else {
             isCorrect = false
         }
-        
         showingScore = true
     }
     
@@ -97,6 +100,6 @@ struct QuizView: View {
 
 struct QuizView_Previews: PreviewProvider {
     static var previews: some View {
-        QuizView(alarmManager: AlarmManager())
+        QuizView(alarmManager: AlarmManager(), viewModel: MainViewModel())
     }
 }

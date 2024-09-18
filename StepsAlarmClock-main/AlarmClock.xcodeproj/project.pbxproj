@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A0F34102C9AC4A2002E4CB9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0F340F2C9AC4A2002E4CB9 /* MainViewModel.swift */; };
 		8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */; };
 		8A1AB2FE2BF85A8F0029ECFF /* SunnyBackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */; };
 		8A1EFDF62C07C47000008AB5 /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */; };
@@ -25,7 +26,7 @@
 		FE3EA5E32BF47CDC002F649E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EA5E22BF47CDC002F649E /* MainView.swift */; };
 		FE3EA5E72BF47F8A002F649E /* neko.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EA5E62BF47F8A002F649E /* neko.png */; };
 		FE7FA16E2C932B510060A3C4 /* HowToUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7FA16D2C932B510060A3C4 /* HowToUse.swift */; };
-		FE7FA1702C932BDD0060A3C4 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7FA16F2C932BDD0060A3C4 /* Collection.swift */; };
+		FE7FA1702C932BDD0060A3C4 /* CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7FA16F2C932BDD0060A3C4 /* CollectionView.swift */; };
 		FEA534FD2C3753C70005171E /* coffee-jelly.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534EC2C3753C70005171E /* coffee-jelly.png */; };
 		FEA534FE2C3753C70005171E /* coffeecup.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534ED2C3753C70005171E /* coffeecup.png */; };
 		FEA534FF2C3753C70005171E /* end-jelly.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534EE2C3753C70005171E /* end-jelly.png */; };
@@ -45,6 +46,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8A0F340F2C9AC4A2002E4CB9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyBackground.swift; sourceTree = "<group>"; };
 		8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyBackGround.swift; sourceTree = "<group>"; };
 		8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
@@ -65,7 +67,7 @@
 		FE3EA5E22BF47CDC002F649E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE3EA5E62BF47F8A002F649E /* neko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neko.png; sourceTree = "<group>"; };
 		FE7FA16D2C932B510060A3C4 /* HowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUse.swift; sourceTree = "<group>"; };
-		FE7FA16F2C932BDD0060A3C4 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		FE7FA16F2C932BDD0060A3C4 /* CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionView.swift; sourceTree = "<group>"; };
 		FEA534EC2C3753C70005171E /* coffee-jelly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee-jelly.png"; sourceTree = "<group>"; };
 		FEA534ED2C3753C70005171E /* coffeecup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffeecup.png; sourceTree = "<group>"; };
 		FEA534EE2C3753C70005171E /* end-jelly.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "end-jelly.png"; sourceTree = "<group>"; };
@@ -116,7 +118,8 @@
 				D153E0572BA3FA8C00529615 /* AlarmView.swift */,
 				D153E0632BA408A500529615 /* SetTimeView.swift */,
 				FE3EA5E22BF47CDC002F649E /* MainView.swift */,
-				FE7FA16F2C932BDD0060A3C4 /* Collection.swift */,
+				8A0F340F2C9AC4A2002E4CB9 /* MainViewModel.swift */,
+				FE7FA16F2C932BDD0060A3C4 /* CollectionView.swift */,
 				FE7FA16D2C932B510060A3C4 /* HowToUse.swift */,
 			);
 			path = " UI";
@@ -300,8 +303,9 @@
 				D153E0582BA3FA8C00529615 /* AlarmView.swift in Sources */,
 				D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */,
 				8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */,
+				8A0F34102C9AC4A2002E4CB9 /* MainViewModel.swift in Sources */,
 				8A1EFDF62C07C47000008AB5 /* AlarmManager.swift in Sources */,
-				FE7FA1702C932BDD0060A3C4 /* Collection.swift in Sources */,
+				FE7FA1702C932BDD0060A3C4 /* CollectionView.swift in Sources */,
 				FE7FA16E2C932B510060A3C4 /* HowToUse.swift in Sources */,
 				D153E0762BAC2ABF00529615 /* AppDelegate.swift in Sources */,
 				8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */,
@@ -442,7 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmClock/Preview Content\"";
-				DEVELOPMENT_TEAM = QV9626CYR5;
+				DEVELOPMENT_TEAM = G3Y54DBA6F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlarmClock/Info.plist;
@@ -474,7 +478,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AlarmClock/Preview Content\"";
-				DEVELOPMENT_TEAM = QV9626CYR5;
+				DEVELOPMENT_TEAM = G3Y54DBA6F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AlarmClock/Info.plist;
