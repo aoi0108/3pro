@@ -118,8 +118,17 @@ class AlarmManager: ObservableObject {
         isShowAlert = false
         isTimerMoving = false
         counter = 1000
+        
+        // 音楽プレイヤーを停止
+        if musicPlayer.isPlaying {
+            musicPlayer.stop()
+        }
+        
+        // システムサウンドの完了処理を削除してバイブレーションを停止
         AudioServicesRemoveSystemSoundCompletion(soundID)
+        AudioServicesDisposeSystemSoundID(soundID)
     }
+
     
     // サウンドの完了処理を追加
     static func addSoundCompletion() {
