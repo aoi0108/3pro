@@ -9,7 +9,7 @@ struct AlarmView: View {
     @StateObject private var alarmManager = AlarmManager() // AlarmManagerのインスタンスを状態オブジェクトとして保持
     @State private var isShowSetTimeView = false // 時刻設定ビューの表示状態を管理
     @State private var myTimer = Date()
-
+    @Environment(\.dismiss) var dismiss // dismissを使用して現在のビューを閉じる
     
     var body: some View {
         NavigationStack {
@@ -32,9 +32,6 @@ struct AlarmView: View {
                     .sheet(isPresented: $isShowSetTimeView) {
                         SetTimeView(myTimer: $myTimer) // 時刻設定ビューを表示
                     }
-                    Text("にアラームを鳴らす")
-                        .font(.title)
-                        .foregroundColor(.primary)
                     
                     Toggle(isOn: $alarmManager.isTimerMoving) {} // タイマーのオンオフを管理
                         .labelsHidden()
@@ -49,20 +46,23 @@ struct AlarmView: View {
                         .padding()
                 }
                 NavigationLink(destination: QuizView(alarmManager: alarmManager, viewModel: MainViewModel()), isActive: $alarmManager.isShowAlert) {
-                          EmptyView()
-                      }
+                    EmptyView()
+                }
             }
             .preferredColorScheme(.light)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Text("Alarm")
+                        .foregroundColor(Color("brown"))
+                        .font(.headline)
+                }
+            }
         }
         
         // テストモードを切り替えるスイッチ
         Toggle("テストモード", isOn: $alarmManager.isTestMode)
             .padding()
     }
-
-    
-    
-
 }
 
 // プレビュー

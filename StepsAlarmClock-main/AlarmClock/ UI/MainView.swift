@@ -8,8 +8,7 @@ struct MainView: View {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
         appearance.backgroundColor = UIColor(named: "beige") // 背景色を設定
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.brown] // タイトルの文字色を設定
-        
+        appearance.titleTextAttributes = [.foregroundColor: UIColor(named: "brown") ?? UIColor.brown]
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
@@ -78,7 +77,7 @@ struct MainView: View {
                             )
                     }
 
-                    NavigationLink(destination: CollectionView(collectedItems: viewModel.collectedItems)) {
+                    NavigationLink(destination: CollectionView(collectedItems: viewModel.collectedItems, viewModel: MainViewModel())) {
                         Image(systemName: "star")
                             .font(.title)
                             .foregroundColor(Color("brown"))
@@ -91,18 +90,6 @@ struct MainView: View {
                             )
                     }
                 }
-
-                // 初期化ボタンを追加
-                Button(action: {
-                    viewModel.resetData() // 初期化ロジックを実行
-                }) {
-                    Text("Reset Level and Collection")
-                        .padding()
-                        .background(Color.red)
-                        .foregroundColor(.white)
-                        .cornerRadius(10)
-                }
-                .padding(.top, 20)
             }
             .toolbar {
                 ToolbarItem(placement: .principal) {
@@ -117,18 +104,3 @@ struct MainView: View {
     }
 }
 
-
-// Preview Wrapper for testing
-struct MainView_PreviewWrapper: View {
-    var body: some View {
-        MainView()
-            .onAppear {
-                // プレビューで UserDefaults に値を設定
-                UserDefaults.standard.set(4, forKey: "score") // `score` を 5 に設定
-            }
-    }
-}
-
-#Preview {
-    MainView_PreviewWrapper()
-}

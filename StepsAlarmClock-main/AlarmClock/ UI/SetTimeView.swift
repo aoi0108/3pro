@@ -16,7 +16,8 @@ struct SetTimeView: View {
                 )
                 .datePickerStyle(.wheel)
                 .labelsHidden()
-            .navigationTitle("アラームを設定")
+            .navigationTitle("setting")
+            
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
@@ -24,6 +25,7 @@ struct SetTimeView: View {
                         dismiss()
                     } label: {
                         Text("キャンセル")
+                            .foregroundColor(Color("brown"))
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
@@ -32,6 +34,7 @@ struct SetTimeView: View {
                         dismiss()
                     } label: {
                         Text("保存")
+                            .foregroundColor(Color("brown"))
                     }
                     .padding()
                 }

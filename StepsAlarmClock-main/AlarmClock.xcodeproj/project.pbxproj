@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8A0F34102C9AC4A2002E4CB9 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0F340F2C9AC4A2002E4CB9 /* MainViewModel.swift */; };
-		8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */; };
-		8A1AB2FE2BF85A8F0029ECFF /* SunnyBackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */; };
 		8A1EFDF62C07C47000008AB5 /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */; };
 		8A30EE242BF488BF00296C6E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE232BF488BF00296C6E /* QuizView.swift */; };
 		8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE302BF4EA4F00296C6E /* ScoreView.swift */; };
@@ -47,8 +45,6 @@
 
 /* Begin PBXFileReference section */
 		8A0F340F2C9AC4A2002E4CB9 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RainyBackground.swift; sourceTree = "<group>"; };
-		8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunnyBackGround.swift; sourceTree = "<group>"; };
 		8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
 		8A30EE232BF488BF00296C6E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		8A30EE302BF4EA4F00296C6E /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
@@ -100,20 +96,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8A30EE2F2BF48D2500296C6E /* ScoreView */ = {
-			isa = PBXGroup;
-			children = (
-				8A30EE302BF4EA4F00296C6E /* ScoreView.swift */,
-				8A1AB2FB2BF8597D0029ECFF /* RainyBackground.swift */,
-				8A1AB2FD2BF85A8F0029ECFF /* SunnyBackGround.swift */,
-			);
-			path = ScoreView;
-			sourceTree = "<group>";
-		};
 		8AF503472C91807A005ADBF9 /*  UI */ = {
 			isa = PBXGroup;
 			children = (
-				8A30EE2F2BF48D2500296C6E /* ScoreView */,
+				8A30EE302BF4EA4F00296C6E /* ScoreView.swift */,
 				8A30EE232BF488BF00296C6E /* QuizView.swift */,
 				D153E0572BA3FA8C00529615 /* AlarmView.swift */,
 				D153E0632BA408A500529615 /* SetTimeView.swift */,
@@ -302,7 +288,6 @@
 				FE3EA5E32BF47CDC002F649E /* MainView.swift in Sources */,
 				D153E0582BA3FA8C00529615 /* AlarmView.swift in Sources */,
 				D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */,
-				8A1AB2FC2BF8597D0029ECFF /* RainyBackground.swift in Sources */,
 				8A0F34102C9AC4A2002E4CB9 /* MainViewModel.swift in Sources */,
 				8A1EFDF62C07C47000008AB5 /* AlarmManager.swift in Sources */,
 				FE7FA1702C932BDD0060A3C4 /* CollectionView.swift in Sources */,
@@ -312,7 +297,6 @@
 				8ADC69982C37B67F0060DF62 /* csvReader.swift in Sources */,
 				D153E0642BA408A500529615 /* SetTimeView.swift in Sources */,
 				8A30EE242BF488BF00296C6E /* QuizView.swift in Sources */,
-				8A1AB2FE2BF85A8F0029ECFF /* SunnyBackGround.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
