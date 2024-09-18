@@ -48,9 +48,9 @@ struct AlarmView: View {
                         .scaleEffect(1.5)
                         .padding()
                 }
-                NavigationLink(destination: QuizView(alarmManager: alarmManager), isActive: $alarmManager.isShowAlert) {
-                    EmptyView()
-                }
+                NavigationLink(destination: QuizView(alarmManager: alarmManager, viewModel: MainViewModel()), isActive: $alarmManager.isShowAlert) {
+                          EmptyView()
+                      }
             }
             .preferredColorScheme(.light)
         }
