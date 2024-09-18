@@ -16,7 +16,8 @@ struct MainView: View {
            let appearance = UINavigationBarAppearance()
            appearance.configureWithOpaqueBackground()
            appearance.backgroundColor = UIColor(red: 229/255, green: 211/255, blue: 163/255, alpha: 1.0) // カスタム色
-           appearance.titleTextAttributes = [.foregroundColor: Color(red: 162/255, green: 119/255, blue: 6/255)]
+        appearance.titleTextAttributes = [.foregroundColor: UIColor(red: 162/255, green: 119/255, blue: 6/255, alpha: 1.0)]
+
            
            UINavigationBar.appearance().standardAppearance = appearance
            UINavigationBar.appearance().scrollEdgeAppearance = appearance
