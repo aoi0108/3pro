@@ -89,12 +89,12 @@ struct QuizView: View {
     private func background(for index: Int) -> Color {
         if let selected = selectedAnswerIndex {
             if selected == index && selected == correctAnswerIndex {
-                return Color.green
+                return Color("green")
             } else if selected == index {
-                return Color.red
+                return Color("red")
             }
         }
-        return Color.gray
+        return Color("beige")
     }
 }
 
