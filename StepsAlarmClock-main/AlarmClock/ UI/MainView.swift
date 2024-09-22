@@ -3,15 +3,7 @@ import SwiftUI
 struct MainView: View {
     @StateObject private var viewModel = MainViewModel() // Bind ViewModel to the view
 
-//    init() {
-//        // ナビゲーションバーの外観を設定
-//        let appearance = UINavigationBarAppearance()
-//        appearance.configureWithOpaqueBackground()
-//        appearance.backgroundColor = UIColor(named: "beige") // 背景色を設定
-//        appearance.titleTextAttributes = [.foregroundColor: UIColor(named: "brown") ?? UIColor.brown]
-//        UINavigationBar.appearance().standardAppearance = appearance
-//        UINavigationBar.appearance().scrollEdgeAppearance = appearance
-//    }
+
 
     var body: some View {
         NavigationStack {
