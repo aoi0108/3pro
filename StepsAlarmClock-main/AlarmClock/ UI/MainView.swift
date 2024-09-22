@@ -3,15 +3,15 @@ import SwiftUI
 struct MainView: View {
     @StateObject private var viewModel = MainViewModel() // Bind ViewModel to the view
 
-    init() {
-        // ナビゲーションバーの外観を設定
-        let appearance = UINavigationBarAppearance()
-        appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor(named: "beige") // 背景色を設定
-        appearance.titleTextAttributes = [.foregroundColor: UIColor(named: "brown") ?? UIColor.brown]
-        UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
-    }
+//    init() {
+//        // ナビゲーションバーの外観を設定
+//        let appearance = UINavigationBarAppearance()
+//        appearance.configureWithOpaqueBackground()
+//        appearance.backgroundColor = UIColor(named: "beige") // 背景色を設定
+//        appearance.titleTextAttributes = [.foregroundColor: UIColor(named: "brown") ?? UIColor.brown]
+//        UINavigationBar.appearance().standardAppearance = appearance
+//        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+//    }
 
     var body: some View {
         NavigationStack {
@@ -77,7 +77,7 @@ struct MainView: View {
                             )
                     }
 
-                    NavigationLink(destination: CollectionView(collectedItems: viewModel.collectedItems, viewModel: MainViewModel())) {
+                    NavigationLink(destination: CollectionView(collectedItems: viewModel.collectedItems, viewModel:MainViewModel())) {
                         Image(systemName: "star")
                             .font(.title)
                             .foregroundColor(Color("brown"))
@@ -91,14 +91,19 @@ struct MainView: View {
                     }
                 }
             }
+            .toolbarBackground(Color("beige"), for: .navigationBar)
+            .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
                 ToolbarItem(placement: .principal) {
                     Text("Home")
                         .foregroundColor(Color("brown"))
                         .font(.headline)
+                       
                 }
+                
             }
-            .navigationBarBackButtonHidden(true)
+            
+            
         }
         .preferredColorScheme(.light)
     }

@@ -5,7 +5,7 @@ import CoreMotion
 import AVFoundation
 import MediaPlayer
 
-struct AlarmView: View {
+struct AlarmView: View{
     @StateObject private var alarmManager = AlarmManager() // AlarmManagerのインスタンスを状態オブジェクトとして保持
     @State private var isShowSetTimeView = false // 時刻設定ビューの表示状態を管理
     @State private var myTimer = Date()
@@ -63,6 +63,7 @@ struct AlarmView: View {
         Toggle("テストモード", isOn: $alarmManager.isTestMode)
             .padding()
     }
+      
 }
 
 // プレビュー
