@@ -11,6 +11,7 @@
 		8A1EFDF62C07C47000008AB5 /* AlarmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */; };
 		8A30EE242BF488BF00296C6E /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE232BF488BF00296C6E /* QuizView.swift */; };
 		8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE302BF4EA4F00296C6E /* ScoreView.swift */; };
+		8A9E28832CA3D951005B4A44 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E28822CA3D951005B4A44 /* title.png */; };
 		8ADC69982C37B67F0060DF62 /* csvReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC69972C37B67F0060DF62 /* csvReader.swift */; };
 		8AF503462C9170AB005ADBF9 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8AF503452C9170AB005ADBF9 /* quiz.csv */; };
 		D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */; };
@@ -50,6 +51,7 @@
 		8A1EFDF52C07C47000008AB5 /* AlarmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmManager.swift; sourceTree = "<group>"; };
 		8A30EE232BF488BF00296C6E /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
 		8A30EE302BF4EA4F00296C6E /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		8A9E28822CA3D951005B4A44 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		8ADC69972C37B67F0060DF62 /* csvReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = csvReader.swift; sourceTree = "<group>"; };
 		8AF503452C9170AB005ADBF9 /* quiz.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
 		D153E0522BA3FA8C00529615 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +195,7 @@
 				FEA534F42C3753C70005171E /* pudding-cream.png */,
 				FEA534F52C3753C70005171E /* pudding-end.png */,
 				FEA534F62C3753C70005171E /* pudding.png */,
+				8A9E28822CA3D951005B4A44 /* title.png */,
 				FEA534F72C3753C70005171E /* soda-fin.png */,
 				FEA534F82C3753C70005171E /* soda-float.png */,
 				FEA534F92C3753C70005171E /* soda-ice.png */,
@@ -270,6 +273,7 @@
 				FEA535062C3753C70005171E /* pudding-end.png in Resources */,
 				8AF503462C9170AB005ADBF9 /* quiz.csv in Resources */,
 				FEA535052C3753C70005171E /* pudding-cream.png in Resources */,
+				8A9E28832CA3D951005B4A44 /* title.png in Resources */,
 				FEA534FD2C3753C70005171E /* coffee-jelly.png in Resources */,
 				D153E05D2BA3FA8F00529615 /* Preview Assets.xcassets in Resources */,
 				FEA535042C3753C70005171E /* parfeit-ice.png in Resources */,

@@ -14,15 +14,20 @@ struct SplashScreen: View {
 //                    .resizable()
 //                    .aspectRatio(contentMode: .fit)
 //                    .padding()
-                
-                
-                Image("soda-fin")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .padding()
+                VStack{
+                    Image("title")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                    
+                    Image("soda-fin")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .padding()
+                }
             }
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
                     withAnimation {
                         isLoading = false
                     }
