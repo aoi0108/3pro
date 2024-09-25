@@ -22,7 +22,7 @@ struct SplashScreen: View {
                     .padding()
             }
             .onAppear {
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
                     withAnimation {
                         isLoading = false
                     }
