@@ -9,11 +9,7 @@ struct SplashScreen: View {
                 Color("beige")
                     .ignoresSafeArea()
  
-//画像挿入箇所
-//                Image("soda-fin")
-//                    .resizable()
-//                    .aspectRatio(contentMode: .fit)
-//                    .padding()
+
                 VStack{
                     Image("title")
                         .resizable()

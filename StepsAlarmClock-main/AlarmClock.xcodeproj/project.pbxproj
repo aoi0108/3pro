@@ -22,6 +22,10 @@
 		D153E06D2BABC3EB00529615 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D153E06C2BABC3EB00529615 /* CoreMotion.framework */; };
 		D153E0762BAC2ABF00529615 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0752BAC2ABE00529615 /* AppDelegate.swift */; };
 		D153E0782BAD780100529615 /* MPVolume.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0772BAD780100529615 /* MPVolume.swift */; };
+		FE31576D2CB78B6100997F26 /* soda-congrats.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3157692CB78B6100997F26 /* soda-congrats.png */; };
+		FE31576E2CB78B6100997F26 /* pudding-congrats.png in Resources */ = {isa = PBXBuildFile; fileRef = FE31576A2CB78B6100997F26 /* pudding-congrats.png */; };
+		FE31576F2CB78B6100997F26 /* coffee-congrats.png in Resources */ = {isa = PBXBuildFile; fileRef = FE31576B2CB78B6100997F26 /* coffee-congrats.png */; };
+		FE3157702CB78B6100997F26 /* parfeit-congrats.png in Resources */ = {isa = PBXBuildFile; fileRef = FE31576C2CB78B6100997F26 /* parfeit-congrats.png */; };
 		FE3EA5E32BF47CDC002F649E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3EA5E22BF47CDC002F649E /* MainView.swift */; };
 		FE3EA5E72BF47F8A002F649E /* neko.png in Resources */ = {isa = PBXBuildFile; fileRef = FE3EA5E62BF47F8A002F649E /* neko.png */; };
 		FE7FA16E2C932B510060A3C4 /* HowToUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7FA16D2C932B510060A3C4 /* HowToUse.swift */; };
@@ -44,6 +48,7 @@
 		FEA5350A2C3753C70005171E /* soda-ice.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534F92C3753C70005171E /* soda-ice.png */; };
 		FEA5350B2C3753C70005171E /* soda-soda.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534FA2C3753C70005171E /* soda-soda.png */; };
 		FEA5350C2C3753C70005171E /* sodacup.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA534FB2C3753C70005171E /* sodacup.png */; };
+		FEB394612CB66E3D006AA39E /* CongratsPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB394602CB66E3D006AA39E /* CongratsPopupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +69,10 @@
 		D153E06E2BABC79100529615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D153E0752BAC2ABE00529615 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D153E0772BAD780100529615 /* MPVolume.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPVolume.swift; sourceTree = "<group>"; };
+		FE3157692CB78B6100997F26 /* soda-congrats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-congrats.png"; sourceTree = "<group>"; };
+		FE31576A2CB78B6100997F26 /* pudding-congrats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pudding-congrats.png"; sourceTree = "<group>"; };
+		FE31576B2CB78B6100997F26 /* coffee-congrats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee-congrats.png"; sourceTree = "<group>"; };
+		FE31576C2CB78B6100997F26 /* parfeit-congrats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parfeit-congrats.png"; sourceTree = "<group>"; };
 		FE3EA5E22BF47CDC002F649E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FE3EA5E62BF47F8A002F649E /* neko.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = neko.png; sourceTree = "<group>"; };
 		FE7FA16D2C932B510060A3C4 /* HowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUse.swift; sourceTree = "<group>"; };
@@ -86,6 +95,7 @@
 		FEA534F92C3753C70005171E /* soda-ice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-ice.png"; sourceTree = "<group>"; };
 		FEA534FA2C3753C70005171E /* soda-soda.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-soda.png"; sourceTree = "<group>"; };
 		FEA534FB2C3753C70005171E /* sodacup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sodacup.png; sourceTree = "<group>"; };
+		FEB394602CB66E3D006AA39E /* CongratsPopupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsPopupView.swift; sourceTree = "<group>"; };
 		FEE0D4A32C8F09E000947C6B /* HowToUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUse.swift; sourceTree = "<group>"; };
 		FEE0D4A52C8F09F900947C6B /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				8A30EE302BF4EA4F00296C6E /* ScoreView.swift */,
+				FEB394602CB66E3D006AA39E /* CongratsPopupView.swift */,
 				8A30EE232BF488BF00296C6E /* QuizView.swift */,
 				FE81E4ED2C9FC68300837A9A /* SplashScreen.storyboard */,
 				FE81E4EF2C9FC79500837A9A /* SplashScreen.swift */,
@@ -188,6 +199,10 @@
 				FEA534ED2C3753C70005171E /* coffeecup.png */,
 				FEA534EE2C3753C70005171E /* end-jelly.png */,
 				FEA534EF2C3753C70005171E /* parfeit-berry.png */,
+				FE31576B2CB78B6100997F26 /* coffee-congrats.png */,
+				FE31576C2CB78B6100997F26 /* parfeit-congrats.png */,
+				FE31576A2CB78B6100997F26 /* pudding-congrats.png */,
+				FE3157692CB78B6100997F26 /* soda-congrats.png */,
 				FEA534F02C3753C70005171E /* parfeit-cereal.png */,
 				FEA534F12C3753C70005171E /* parfeit-cream.png */,
 				FEA534F22C3753C70005171E /* parfeit-fin.png */,
@@ -274,8 +289,10 @@
 				8AF503462C9170AB005ADBF9 /* quiz.csv in Resources */,
 				FEA535052C3753C70005171E /* pudding-cream.png in Resources */,
 				8A9E28832CA3D951005B4A44 /* title.png in Resources */,
+				FE31576F2CB78B6100997F26 /* coffee-congrats.png in Resources */,
 				FEA534FD2C3753C70005171E /* coffee-jelly.png in Resources */,
 				D153E05D2BA3FA8F00529615 /* Preview Assets.xcassets in Resources */,
+				FE31576E2CB78B6100997F26 /* pudding-congrats.png in Resources */,
 				FEA535042C3753C70005171E /* parfeit-ice.png in Resources */,
 				FE81E4EE2C9FC68300837A9A /* SplashScreen.storyboard in Resources */,
 				D153E05A2BA3FA8F00529615 /* Assets.xcassets in Resources */,
@@ -283,7 +300,9 @@
 				FEA535082C3753C70005171E /* soda-fin.png in Resources */,
 				FEA5350C2C3753C70005171E /* sodacup.png in Resources */,
 				FEA534FF2C3753C70005171E /* end-jelly.png in Resources */,
+				FE31576D2CB78B6100997F26 /* soda-congrats.png in Resources */,
 				FEA535022C3753C70005171E /* parfeit-cream.png in Resources */,
+				FE3157702CB78B6100997F26 /* parfeit-congrats.png in Resources */,
 				FE3EA5E72BF47F8A002F649E /* neko.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,6 +328,7 @@
 				8ADC69982C37B67F0060DF62 /* csvReader.swift in Sources */,
 				D153E0642BA408A500529615 /* SetTimeView.swift in Sources */,
 				8A30EE242BF488BF00296C6E /* QuizView.swift in Sources */,
+				FEB394612CB66E3D006AA39E /* CongratsPopupView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
