@@ -106,8 +106,8 @@ struct QuizView: View {
          
          年、月、日を使ってインデックスを決定 (例えば、年 * 月 * 日の合計を使用)
          <2024/10/13に実行し、quiz.csvにあるクイズ数が54個の場合>
-         2024*10*13 / 54 = 4872あまり32
-         よりクイズのindex番号が32+1のクイズが出題される
+         2024 * 10 * 13 / 53 = 4964 あまり28
+         よりクイズのindex番号が28のクイズが出題される
          
          */
         let csvArray = CSVReader.readCSV(fileName: csvFileName)
