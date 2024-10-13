@@ -32,6 +32,27 @@ struct HowToUse: View{
                         }
                         .padding()
                         .foregroundColor(.brown)
+                    
+                    }
+                    Text("制作者情報")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color("brown"))
+                    
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(Color("beige"))
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 240)
+                        VStack(alignment: .leading, spacing: 10) {
+                            Text("津田塾大学 学芸学部 情報科学科")
+                            Text("2024年度 3年プロジェクト制作物")
+                            Text("研究室：栗原研究室")
+                            Text("制作者：平松蒼惟 羽田野真央")
+                        }
+                        .padding()
+                        .foregroundColor(.brown)
+                    
                     }
                 }
             }
