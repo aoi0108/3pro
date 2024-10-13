@@ -18,6 +18,7 @@ struct QuizView: View {
         VStack {
             if !currentQuestion.isEmpty && !answers.isEmpty {
                 Text(currentQuestion)
+                    .foregroundColor(Color("brown"))
                     .padding(30)
                     .padding(.vertical, 30)
                 

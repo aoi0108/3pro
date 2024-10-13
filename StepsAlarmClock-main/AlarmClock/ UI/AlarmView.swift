@@ -27,6 +27,7 @@ struct AlarmView: View{
                     }, label: {
                         Text("\(String(format: "%02d", hour)):\(String(format: "%02d", minute))")
                             .font(.system(size: 90))
+                            .foregroundColor(Color("brown"))
                             .bold()
                     })
                     .sheet(isPresented: $isShowSetTimeView) {
