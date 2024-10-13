@@ -44,14 +44,15 @@ struct HowToUse: View{
                         RoundedRectangle(cornerRadius: 15)
                             .fill(Color("beige"))
                             .frame(maxWidth: .infinity)
-                            .frame(height: 240)
+                           
                         VStack(alignment: .leading, spacing: 10) {
                             Text("津田塾大学 学芸学部 情報科学科")
                             Text("2024年度 3年プロジェクト制作物")
                             Text("研究室：栗原研究室")
                             Text("制作者：平松蒼惟 羽田野真央")
-                        }
-                        .padding()
+                            Link("GitHub URL：aoi0108/3pro", destination: URL(string: "https://github.com/aoi0108/3pro")!)
+                            
+                        }.padding()
                         .foregroundColor(.brown)
                     
                     }
@@ -64,10 +65,8 @@ struct HowToUse: View{
                         RoundedRectangle(cornerRadius: 15)
                             .fill(Color("beige"))
                             .frame(maxWidth: .infinity)
-                            .frame(height: 240)
-                        VStack(alignment: .leading, spacing: 10) {
-                            Link("GitHub:sekibouya/StepsAlarmClock", destination: URL(string: "https://github.com/sekibouya/StepsAlarmClock.git")!)
-                                            
+                        VStack(alignment: .leading){
+                            Link("GitHub URL：sekibouya/StepsAlarmClock", destination: URL(string: "https://github.com/sekibouya/StepsAlarmClock.git")!)
                             Text("BGM by OtoLogic(CC BY 4.0)")
                            
                         }
