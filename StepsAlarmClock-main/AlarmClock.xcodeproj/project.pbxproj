@@ -13,6 +13,10 @@
 		8A30EE312BF4EA4F00296C6E /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A30EE302BF4EA4F00296C6E /* ScoreView.swift */; };
 		8A9E28832CA3D951005B4A44 /* title.png in Resources */ = {isa = PBXBuildFile; fileRef = 8A9E28822CA3D951005B4A44 /* title.png */; };
 		8ADC69982C37B67F0060DF62 /* csvReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADC69972C37B67F0060DF62 /* csvReader.swift */; };
+		8AE68F7F2CBBA0F000B19109 /* pudding-congrats 2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 8AE68F7D2CBBA0F000B19109 /* pudding-congrats 2.PNG */; };
+		8AE68F802CBBA0F000B19109 /* coffee-congrats 2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 8AE68F7B2CBBA0F000B19109 /* coffee-congrats 2.PNG */; };
+		8AE68F812CBBA0F000B19109 /* parfeit-congrats 2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 8AE68F7C2CBBA0F000B19109 /* parfeit-congrats 2.PNG */; };
+		8AE68F822CBBA0F000B19109 /* soda-congrats 2.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 8AE68F7E2CBBA0F000B19109 /* soda-congrats 2.PNG */; };
 		8AF503462C9170AB005ADBF9 /* quiz.csv in Resources */ = {isa = PBXBuildFile; fileRef = 8AF503452C9170AB005ADBF9 /* quiz.csv */; };
 		D153E0562BA3FA8C00529615 /* AlarmClockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */; };
 		D153E0582BA3FA8C00529615 /* AlarmView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D153E0572BA3FA8C00529615 /* AlarmView.swift */; };
@@ -58,6 +62,10 @@
 		8A30EE302BF4EA4F00296C6E /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		8A9E28822CA3D951005B4A44 /* title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = title.png; sourceTree = "<group>"; };
 		8ADC69972C37B67F0060DF62 /* csvReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = csvReader.swift; sourceTree = "<group>"; };
+		8AE68F7B2CBBA0F000B19109 /* coffee-congrats 2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coffee-congrats 2.PNG"; sourceTree = "<group>"; };
+		8AE68F7C2CBBA0F000B19109 /* parfeit-congrats 2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "parfeit-congrats 2.PNG"; sourceTree = "<group>"; };
+		8AE68F7D2CBBA0F000B19109 /* pudding-congrats 2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pudding-congrats 2.PNG"; sourceTree = "<group>"; };
+		8AE68F7E2CBBA0F000B19109 /* soda-congrats 2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "soda-congrats 2.PNG"; sourceTree = "<group>"; };
 		8AF503452C9170AB005ADBF9 /* quiz.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quiz.csv; sourceTree = "<group>"; };
 		D153E0522BA3FA8C00529615 /* AlarmClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlarmClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D153E0552BA3FA8C00529615 /* AlarmClockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmClockApp.swift; sourceTree = "<group>"; };
@@ -199,6 +207,10 @@
 				FEA534ED2C3753C70005171E /* coffeecup.png */,
 				FEA534EE2C3753C70005171E /* end-jelly.png */,
 				FEA534EF2C3753C70005171E /* parfeit-berry.png */,
+				8AE68F7B2CBBA0F000B19109 /* coffee-congrats 2.PNG */,
+				8AE68F7C2CBBA0F000B19109 /* parfeit-congrats 2.PNG */,
+				8AE68F7D2CBBA0F000B19109 /* pudding-congrats 2.PNG */,
+				8AE68F7E2CBBA0F000B19109 /* soda-congrats 2.PNG */,
 				FE31576B2CB78B6100997F26 /* coffee-congrats.png */,
 				FE31576C2CB78B6100997F26 /* parfeit-congrats.png */,
 				FE31576A2CB78B6100997F26 /* pudding-congrats.png */,
@@ -297,6 +309,10 @@
 				FE81E4EE2C9FC68300837A9A /* SplashScreen.storyboard in Resources */,
 				D153E05A2BA3FA8F00529615 /* Assets.xcassets in Resources */,
 				FEA535092C3753C70005171E /* soda-float.png in Resources */,
+				8AE68F7F2CBBA0F000B19109 /* pudding-congrats 2.PNG in Resources */,
+				8AE68F802CBBA0F000B19109 /* coffee-congrats 2.PNG in Resources */,
+				8AE68F812CBBA0F000B19109 /* parfeit-congrats 2.PNG in Resources */,
+				8AE68F822CBBA0F000B19109 /* soda-congrats 2.PNG in Resources */,
 				FEA535082C3753C70005171E /* soda-fin.png in Resources */,
 				FEA5350C2C3753C70005171E /* sodacup.png in Resources */,
 				FEA534FF2C3753C70005171E /* end-jelly.png in Resources */,
