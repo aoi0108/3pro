@@ -58,10 +58,28 @@ struct QuizView: View {
     }
     
     private func loadQuiz() {
+        /*
+         
+         年、月、日を使ってインデックスを決定 (例えば、年 * 月 * 日の合計を使用)
+         <2024/10/13に実行し、quiz.csvにあるクイズ数が54個の場合>
+         2024*10*13 / 54 = 4872あまり32
+         よりクイズのindex番号が32+1のクイズが出題される
+         
+         */
         let csvArray = CSVReader.readCSV(fileName: csvFileName)
+        
         if !csvArray.isEmpty {
-            let randomIndex = Int.random(in: 0..<csvArray.count)
-            let quizData = csvArray[randomIndex].components(separatedBy: "/")
+            // 現在の日付を取得
+            let today = Date()
+            let calendar = Calendar.current
+            
+            let year = calendar.component(.year, from: today)
+            let month = calendar.component(.month, from: today)
+            let day = calendar.component(.day, from: today)
+            
+            let index = (year * month * day) % csvArray.count
+            
+            let quizData = csvArray[index].components(separatedBy: "/")
             
             if quizData.count >= 3 {
                 currentQuestion = quizData[0]
@@ -70,7 +88,8 @@ struct QuizView: View {
             }
         }
     }
-    
+
+
     private func checkAnswer(selectedIndex: Int) {
         if selectedIndex == correctAnswerIndex {
             // MainViewModelのcorrectCountを更新
