@@ -34,6 +34,7 @@ struct HowToUse: View{
                         .foregroundColor(.brown)
                     
                     }
+                    
                     Text("制作者情報")
                         .font(.headline)
                         .fontWeight(.semibold)
@@ -49,6 +50,26 @@ struct HowToUse: View{
                             Text("2024年度 3年プロジェクト制作物")
                             Text("研究室：栗原研究室")
                             Text("制作者：平松蒼惟 羽田野真央")
+                        }
+                        .padding()
+                        .foregroundColor(.brown)
+                    
+                    }
+                    Text("クレジット")
+                        .font(.headline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color("brown"))
+                    
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 15)
+                            .fill(Color("beige"))
+                            .frame(maxWidth: .infinity)
+                            .frame(height: 240)
+                        VStack(alignment: .leading, spacing: 10) {
+                            Link("GitHub:sekibouya/StepsAlarmClock", destination: URL(string: "https://github.com/sekibouya/StepsAlarmClock.git")!)
+                                            
+                            Text("BGM by OtoLogic(CC BY 4.0)")
+                           
                         }
                         .padding()
                         .foregroundColor(.brown)

@@ -1,8 +1,9 @@
 {
   "data" : [
     {
-      "filename" : "BrainPlaybackMusic.wav",
-      "idiom" : "universal"
+      "filename" : "Smartphone-Alarm01-18(Speaker).mp3",
+      "idiom" : "universal",
+      "universal-type-identifier" : "public.mp3"
     }
   ],
   "info" : {
