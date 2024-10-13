@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D153E0512BA3FA8C00529615"
-               BuildableName = "AlarmClock.app"
-               BlueprintName = "AlarmClock"
-               ReferencedContainer = "container:AlarmClock.xcodeproj">
+               BuildableName = "e-Wake!.app"
+               BlueprintName = "e-Wake!"
+               ReferencedContainer = "container:e-Wake!.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D153E0512BA3FA8C00529615"
-            BuildableName = "AlarmClock.app"
-            BlueprintName = "AlarmClock"
-            ReferencedContainer = "container:AlarmClock.xcodeproj">
+            BuildableName = "e-Wake!.app"
+            BlueprintName = "e-Wake!"
+            ReferencedContainer = "container:e-Wake!.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -69,9 +69,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D153E0512BA3FA8C00529615"
-            BuildableName = "AlarmClock.app"
-            BlueprintName = "AlarmClock"
-            ReferencedContainer = "container:AlarmClock.xcodeproj">
+            BuildableName = "e-Wake!.app"
+            BlueprintName = "e-Wake!"
+            ReferencedContainer = "container:e-Wake!.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -72,10 +72,12 @@ struct AlarmView: View {
             }
         }
         
-//        // テストモードを切り替えるスイッチ
-//        Toggle("テストモード", isOn: $alarmManager.isTestMode)
-//            .padding()
-//            .tint(Color("green"))
+        // テストモードを切り替えるスイッチ
+        /*
+        Toggle("テストモード", isOn: $alarmManager.isTestMode)
+            .padding()
+            .tint(Color("green"))
+         */
     }
 }
 
