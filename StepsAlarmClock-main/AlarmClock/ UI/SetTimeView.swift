@@ -16,8 +16,7 @@ struct SetTimeView: View {
                 )
                 .datePickerStyle(.wheel)
                 .labelsHidden()
-            .navigationTitle("setting")
-            
+                .toolbarBackground(.visible, for: .navigationBar)
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {

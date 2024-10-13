@@ -50,13 +50,19 @@ struct AlarmView: View{
                 }
             }
             .preferredColorScheme(.light)
+            .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("Alarm")
-                        .foregroundColor(Color("brown"))
-                        .font(.headline)
-                }
-            }
+                            ToolbarItem(placement: .principal) {
+                                VStack {
+                                    Spacer()
+                                    Text("Alarm")
+                                        .foregroundColor(Color("brown"))
+                                        .font(.title)
+                                        .bold()
+                                   
+                                }
+                            }
+                        }
         }
         
         // テストモードを切り替えるスイッチ

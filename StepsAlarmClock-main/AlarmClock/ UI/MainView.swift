@@ -8,40 +8,64 @@ struct MainView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                VStack(alignment: .leading, spacing: 10) {
-                    Text("level: \(viewModel.correctCount)")
-                        .font(.title3)
-                        .foregroundColor(Color("brown"))
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 8)
-                        .background(Color("beige"))
-                        .cornerRadius(20)
-
-                    Text("status: \(viewModel.statusName(for: viewModel.correctCount))")
-                        .font(.title3)
-                        .foregroundColor(Color("brown"))
-                        .padding(.horizontal, 20)
-                        .padding(.vertical, 8)
-                        .background(Color("beige"))
-                        .cornerRadius(20)
-
-                    if let itemCount = viewModel.collectedItems[viewModel.statusName(for: viewModel.correctCount)] {
-                        Text("Collected count: \(itemCount)")
+                Spacer()
+                VStack(alignment: .leading, spacing: 16) {
+                    HStack {
+                        Text("Level")
+                            .font(.title3)
+                            .foregroundColor(Color("brown"))
+                            .bold() // 強調
+                        
+                        Text("\(viewModel.correctCount)")
                             .font(.title3)
                             .foregroundColor(Color("brown"))
                             .padding(.horizontal, 20)
                             .padding(.vertical, 8)
                             .background(Color("beige"))
                             .cornerRadius(20)
+                        
+                    }
+                    
+                    HStack {
+                        Text("Status")
+                            .font(.title3)
+                            .foregroundColor(Color("brown"))
+                            .bold() // 強調
+                        
+                        Text("\(viewModel.statusName(for: viewModel.correctCount))")
+                            .font(.title3)
+                            .foregroundColor(Color("brown"))
+                            .padding(.horizontal, 20)
+                            .padding(.vertical, 8)
+                            .background(Color("beige"))
+                            .cornerRadius(20)
+                        
+                    }
+                    
+                    if let itemCount = viewModel.collectedItems[viewModel.statusName(for: viewModel.correctCount)] {
+                        HStack {
+                            Text("Collected")
+                                .font(.title3)
+                                .foregroundColor(Color("brown"))
+                                .bold() // 強調
+                            
+                            Text("\(itemCount)")
+                                .font(.title3)
+                                .foregroundColor(Color("brown"))
+                                .padding(.horizontal, 20)
+                                .padding(.vertical, 8)
+                                .background(Color("beige"))
+                                .cornerRadius(20)
+                            
+                        }
                     }
                 }
-
                 Image(viewModel.selectImageName(for: viewModel.correctCount))
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200)
-                    .padding()
+                    .frame(width: 250, height: 250)
 
+                Spacer()
                 HStack(spacing: 20) {
                     NavigationLink(destination: HowToUse()) {
                         Image(systemName: "info.circle")
@@ -55,7 +79,7 @@ struct MainView: View {
                                     .stroke(Color("brown"), lineWidth: 2)
                             )
                     }
-
+                    
                     NavigationLink(destination: AlarmView()) {
                         Image(systemName: "clock")
                             .font(.title)
@@ -82,22 +106,28 @@ struct MainView: View {
                             )
                     }
                 }
+                Spacer()
             }
             .toolbarBackground(Color("beige"), for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
-                ToolbarItem(placement: .principal) {
-                    Text("Home")
-                        .foregroundColor(Color("brown"))
-                        .font(.headline)
-                       
-                }
-                
-            }
-            
-            
+                            ToolbarItem(placement: .principal) {
+                                VStack {
+                                    Spacer()
+                                    Text("Home")
+                                        .foregroundColor(Color("brown"))
+                                        .font(.title)
+                                        .bold()
+                                   
+                                }
+                            }
+                        }
         }
         .preferredColorScheme(.light)
     }
 }
 
+
+#Preview {
+   MainView()
+}

@@ -20,10 +20,11 @@ struct CollectionView: View {
                                 VStack(alignment: .leading) {
                                     Text(item) // Display the item name
                                         .font(.headline)
+                                        .foregroundColor(Color("brown"))
                                     
-                                    Text("Collected: ✖️\(count)") // Display count of each collected item
+                                    Text("Collected: ×\(count)") // Display count of each collected item
                                         .font(.subheadline)
-                                        .foregroundColor(.gray)
+                                        .foregroundColor(Color("brown"))
                                 }
                                 
                                 Spacer()
@@ -50,14 +51,22 @@ struct CollectionView: View {
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, 10)
+     
+                .toolbarBackground(.visible, for: .navigationBar)
                 .toolbar {
-                    ToolbarItem(placement: .principal) {
-                        Text("Collection")
-                            .foregroundColor(Color("brown"))
-                            .font(.headline)
-                    }
-                }
+                                ToolbarItem(placement: .principal) {
+                                    VStack {
+                                        Spacer()
+                                        Text("Collection")
+                                            .foregroundColor(Color("brown"))
+                                            .font(.title)
+                                            .bold()
+                                       
+                                    }
+                                }
+                            }
             }
+            
             .preferredColorScheme(.light)
         }
     }
