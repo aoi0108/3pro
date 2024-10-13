@@ -23,14 +23,14 @@ struct HowToUse: View{
                         RoundedRectangle(cornerRadius: 15)
                             .fill(Color("beige"))
                             .frame(maxWidth: .infinity)
-                            .frame(height: 240)
+                            
                         VStack(alignment: .leading, spacing: 10) {
                             Text("1. ホーム画面中央の時計ボタンでアラームを設定する。")
                             Text("2. 設定した時間になるとアラームが鳴り、問題が出題される。")
                             Text("3. 問題に正解すると、アラームが止まり、アイテムを獲得できる。")
                             Text("4. 集めたアイテムはホーム画面右側のコレクションボタンで閲覧できる。")
                         }
-                        .padding()
+                        .padding(30)
                         .foregroundColor(.brown)
                     
                     }
@@ -52,7 +52,7 @@ struct HowToUse: View{
                             Text("制作者：平松蒼惟 羽田野真央")
                             Link("GitHub URL：aoi0108/3pro", destination: URL(string: "https://github.com/aoi0108/3pro")!)
                             
-                        }.padding()
+                        }.padding(30)
                         .foregroundColor(.brown)
                     
                     }
@@ -70,7 +70,7 @@ struct HowToUse: View{
                             Text("BGM by OtoLogic(CC BY 4.0)")
                            
                         }
-                        .padding()
+                        .padding(30)
                         .foregroundColor(.brown)
                     
                     }

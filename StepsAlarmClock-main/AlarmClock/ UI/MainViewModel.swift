@@ -74,8 +74,8 @@ class MainViewModel: ObservableObject {
         switch count % 17 {
         case 0, 1, 2: return "Coffee Jelly"
         case 3, 4, 5, 6: return "Pudding"
-        case 7, 8, 9, 10, 11, 12: return "Cream Soda"
-        case 13, 14, 15, 16: return "Parfait"
+        case 7, 8, 9, 10, 11: return "Cream Soda"
+        case 12, 13, 14, 15, 16: return "Parfait"
         default: return "Unknown"
         }
     }

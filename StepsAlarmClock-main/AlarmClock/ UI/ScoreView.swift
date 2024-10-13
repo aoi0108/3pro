@@ -30,12 +30,6 @@ struct ScoreView: View {
                                 .frame(width: 80, height: 80)
                             
                             
-                            
-                            Text("You've earned 1 point!")
-                                .font(.title2)
-                                .foregroundColor(Color("green"))
-     
-                           
                             HStack{
                                 // アラーム停止ボタン
                                 Button {

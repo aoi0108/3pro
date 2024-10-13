@@ -6,10 +6,11 @@ struct MainView: View {
 
 
     var body: some View {
+        
         NavigationStack {
             VStack {
-                Spacer()
                 VStack(alignment: .leading, spacing: 16) {
+                    
                     HStack {
                         Text("Level")
                             .font(.title3)
@@ -25,7 +26,6 @@ struct MainView: View {
                             .cornerRadius(20)
                         
                     }
-                    
                     HStack {
                         Text("Status")
                             .font(.title3)
@@ -59,13 +59,15 @@ struct MainView: View {
                             
                         }
                     }
+                    
                 }
+                
                 Image(viewModel.selectImageName(for: viewModel.correctCount))
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 250, height: 250)
-
-                Spacer()
+                
+                
                 HStack(spacing: 20) {
                     NavigationLink(destination: HowToUse()) {
                         Image(systemName: "info.circle")
@@ -92,7 +94,7 @@ struct MainView: View {
                                     .stroke(Color("brown"), lineWidth: 2)
                             )
                     }
-
+                    
                     NavigationLink(destination: CollectionView(collectedItems: viewModel.collectedItems, viewModel:MainViewModel())) {
                         Image(systemName: "star")
                             .font(.title)
@@ -106,8 +108,8 @@ struct MainView: View {
                             )
                     }
                 }
-                Spacer()
             }
+            
             .toolbarBackground(Color("beige"), for: .navigationBar)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {

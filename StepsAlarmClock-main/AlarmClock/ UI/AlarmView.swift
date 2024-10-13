@@ -5,7 +5,7 @@ import CoreMotion
 import AVFoundation
 import MediaPlayer
 
-struct AlarmView: View{
+struct AlarmView: View {
     @StateObject private var alarmManager = AlarmManager() // AlarmManagerのインスタンスを状態オブジェクトとして保持
     @State private var isShowSetTimeView = false // 時刻設定ビューの表示状態を管理
     @State private var myTimer = Date()
@@ -25,10 +25,16 @@ struct AlarmView: View{
                         alarmManager.isTimerMoving = false
                         UIScreen.main.brightness += 0.01
                     }, label: {
-                        Text("\(String(format: "%02d", hour)):\(String(format: "%02d", minute))")
-                            .font(.system(size: 90))
-                            .foregroundColor(Color("brown"))
-                            .bold()
+                        ZStack {
+                            Circle()
+                                .fill(Color("beige"))
+                                .frame(width: 350, height: 250) // 円のサイズを設定
+                            
+                            Text("\(String(format: "%02d", hour)):\(String(format: "%02d", minute))")
+                                .font(.system(size: 60))
+                                .foregroundColor(Color("brown"))
+                                .bold()
+                        }
                     })
                     .sheet(isPresented: $isShowSetTimeView) {
                         SetTimeView(myTimer: $myTimer) // 時刻設定ビューを表示
@@ -42,6 +48,7 @@ struct AlarmView: View{
                                 UIScreen.main.brightness = 0.0
                             }
                         }
+                        .tint(Color("green"))
                         .fixedSize()
                         .scaleEffect(1.5)
                         .padding()
@@ -53,24 +60,23 @@ struct AlarmView: View{
             .preferredColorScheme(.light)
             .toolbarBackground(.visible, for: .navigationBar)
             .toolbar {
-                            ToolbarItem(placement: .principal) {
-                                VStack {
-                                    Spacer()
-                                    Text("Alarm")
-                                        .foregroundColor(Color("brown"))
-                                        .font(.title)
-                                        .bold()
-                                   
-                                }
-                            }
-                        }
+                ToolbarItem(placement: .principal) {
+                    VStack {
+                        Spacer()
+                        Text("Alarm")
+                            .foregroundColor(Color("brown"))
+                            .font(.title)
+                            .bold()
+                    }
+                }
+            }
         }
         
-        // テストモードを切り替えるスイッチ
-        Toggle("テストモード", isOn: $alarmManager.isTestMode)
-            .padding()
+//        // テストモードを切り替えるスイッチ
+//        Toggle("テストモード", isOn: $alarmManager.isTestMode)
+//            .padding()
+//            .tint(Color("green"))
     }
-      
 }
 
 // プレビュー

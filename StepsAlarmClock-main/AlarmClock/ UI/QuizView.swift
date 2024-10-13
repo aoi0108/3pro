@@ -16,12 +16,38 @@ struct QuizView: View {
     
     var body: some View {
         VStack {
+            Spacer()
+
             if !currentQuestion.isEmpty && !answers.isEmpty {
-                Text(currentQuestion)
-                    .foregroundColor(Color("brown"))
-                    .padding(30)
-                    .padding(.vertical, 30)
+                VStack(spacing: 20) {
+                    Spacer()
+
+                    // クイズタイトル
+                    Text("Today's Quiz")
+                        .font(.title)
+                        .foregroundColor(Color("brown"))
+                        .bold()
+               // 質問部分
+                    Text(currentQuestion)
+                        .font(.system(size: 20))
+                        .foregroundColor(Color("brown"))
+                        .multilineTextAlignment(.center)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(
+                            RoundedRectangle(cornerRadius: 15)
+                                .fill(Color("beige").opacity(0.5))
+                        )
+                      
+                    
+                        .padding(.horizontal, 30)
+                        .padding()
+                    Spacer()
+
+                }
                 
+                Spacer()
+                // 選択肢のボタン表示
                 ForEach(0..<min(answers.count, 4), id: \.self) { index in
                     Button(action: {
                         self.selectedAnswerIndex = index
@@ -29,16 +55,33 @@ struct QuizView: View {
                         print("index:\(index)")
                     }) {
                         Text(self.answers[index])
+                            .font(.system(size: 20))
+                            .bold()
                             .padding()
-                            .frame(maxWidth: 200)
+                            .frame(maxWidth: .infinity, minHeight: 60)
                             .background(self.background(for: index))
-                            .foregroundColor(.white)
-                            .cornerRadius(20)
+                            .foregroundColor(Color("brown"))
+                            .cornerRadius(15)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(Color("brown"), lineWidth: 2)
+                            )
+
                     }
+                    .padding(.horizontal, 30)
                     .padding(.vertical, 5)
+                    .padding(.horizontal)
+                    
                 }
             }
+            Spacer()
         }
+        .padding(.vertical, 20)
+        .background(Color("lightBackground")) // 背景色を追加してクイズ画面らしさを演出
+        .onAppear {
+            self.loadQuiz()
+        }
+
         .onAppear {
             self.loadQuiz()
         }
@@ -55,6 +98,7 @@ struct QuizView: View {
             isActive: $navigateToMainView,
             label: { EmptyView() }
         )
+        
     }
     
     private func loadQuiz() {
@@ -88,8 +132,8 @@ struct QuizView: View {
             }
         }
     }
-
-
+    
+    
     private func checkAnswer(selectedIndex: Int) {
         if selectedIndex == correctAnswerIndex {
             // MainViewModelのcorrectCountを更新
@@ -109,12 +153,12 @@ struct QuizView: View {
     private func background(for index: Int) -> Color {
         if let selected = selectedAnswerIndex {
             if selected == index && selected == correctAnswerIndex {
-                return Color("green")
+                return Color("green").opacity(0.7)
             } else if selected == index {
-                return Color("red")
+                return Color("red").opacity(0.7)
             }
         }
-        return Color("beige")
+        return Color("beige").opacity(0.5)
     }
 }
 

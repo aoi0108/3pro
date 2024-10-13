@@ -2,27 +2,30 @@ import SwiftUI
 
 // CollectionView
 struct CollectionView: View {
-    var collectedItems: [String: Int] // Collected items dictionary
+    var collectedItems: [String: Int]
     @ObservedObject var viewModel: MainViewModel
- 
+    
+    // 順番を指定するリスト
+    let displayOrder = ["Coffee Jelly", "Pudding", "Cream Soda", "Parfait"]
+    
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading, spacing: 20) {
-                    ForEach(collectedItems.sorted(by: { $0.key < $1.key }), id: \.key) { item, count in
-                        if count > 0 {
+                    ForEach(displayOrder, id: \.self) { item in
+                        if let count = collectedItems[item], count > 0 {
                             HStack {
-                                Image(selectImageName(for: item, count: count)) // Display image based on count and item
+                                Image(selectImageName(for: item, count: count))
                                     .resizable()
                                     .aspectRatio(contentMode: .fit)
-                                    .frame(width: 200, height: 200) // Adjust image size
+                                    .frame(width: 200, height: 200)
                                 
                                 VStack(alignment: .leading) {
-                                    Text(item) // Display the item name
+                                    Text(item)
                                         .font(.headline)
                                         .foregroundColor(Color("brown"))
                                     
-                                    Text("Collected: ×\(count)") // Display count of each collected item
+                                    Text("Collected: ×\(count)")
                                         .font(.subheadline)
                                         .foregroundColor(Color("brown"))
                                 }
@@ -34,6 +37,7 @@ struct CollectionView: View {
                             .cornerRadius(10)
                         }
                     }
+                    
                     Spacer()
                     Button(action: {
                         viewModel.resetData() // 初期化ロジックを実行
@@ -51,48 +55,46 @@ struct CollectionView: View {
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, 10)
-     
                 .toolbarBackground(.visible, for: .navigationBar)
                 .toolbar {
-                                ToolbarItem(placement: .principal) {
-                                    VStack {
-                                        Spacer()
-                                        Text("Collection")
-                                            .foregroundColor(Color("brown"))
-                                            .font(.title)
-                                            .bold()
-                                       
-                                    }
-                                }
-                            }
+                    ToolbarItem(placement: .principal) {
+                        VStack {
+                            Spacer()
+                            Text("Collection")
+                                .foregroundColor(Color("brown"))
+                                .font(.title)
+                                .bold()
+                        }
+                    }
+                }
             }
-            
             .preferredColorScheme(.light)
         }
     }
-    // Helper function to map item name to corresponding image based on count
+    
+
     func selectImageName(for item: String, count: Int) -> String {
         switch item {
         case "Coffee Jelly":
-            return count >= 3 ? "coffee-jelly" : "end-jelly" // Case 2
+            return "end-jelly" // Case 2
         case "Pudding":
-            return count >= 6 ? "pudding" : "pudding-end"  // Case 6
+            return "pudding-end"  // Case 6
         case "Cream Soda":
-            return count >= 11 ? "soda-soda" : "soda-fin" // Case 11
+            return "soda-fin" // Case 11
         case "Parfait":
-            return count >= 16 ? "parfeit-cereal" : "parfeit-fin" // Case 16
+            return "parfeit-fin" // Case 16
         default:
-            return "unknown" // Provide default or fallback image if needed
+            return "unknown"
         }
     }
 }
 
-// Preview for MainView
+
 struct MainView_PreviewWrapper: View {
     var body: some View {
         MainView()
             .onAppear {
-                UserDefaults.standard.set(4, forKey: "score") // Preview with score set to 4
+                UserDefaults.standard.set(4, forKey: "score")
             }
     }
 }
@@ -107,8 +109,8 @@ struct CollectionView_PreviewWrapper: View {
     
     var body: some View {
         CollectionView(collectedItems: [
-            "Coffee Jelly": 3,
-            "Pudding": 7,
+            "Coffee Jelly": 2,
+            "Pudding": 6,
             "Cream Soda": 11,
             "Parfait": 16
         ], viewModel: viewModel) // Pass initialized viewModel

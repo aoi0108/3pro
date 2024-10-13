@@ -23,7 +23,7 @@ struct SetTimeView: View {
                     Button {
                         dismiss()
                     } label: {
-                        Text("キャンセル")
+                        Text("Cancel")
                             .foregroundColor(Color("brown"))
                     }
                 }
@@ -32,7 +32,7 @@ struct SetTimeView: View {
                         myTimer = settingTime
                         dismiss()
                     } label: {
-                        Text("保存")
+                        Text("Set")
                             .foregroundColor(Color("brown"))
                     }
                     .padding()
