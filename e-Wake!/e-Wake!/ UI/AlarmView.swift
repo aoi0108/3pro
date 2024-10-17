@@ -53,9 +53,9 @@ struct AlarmView: View {
                         .scaleEffect(1.5)
                         .padding()
                 }
-                NavigationLink(destination: QuizView(alarmManager: alarmManager, viewModel: MainViewModel()), isActive: $alarmManager.isShowAlert) {
-                    EmptyView()
-                }
+            }
+            .navigationDestination(isPresented: $alarmManager.isShowAlert) {
+                QuizView(alarmManager: alarmManager, viewModel: MainViewModel())
             }
             .preferredColorScheme(.light)
             .toolbarBackground(.visible, for: .navigationBar)
@@ -73,11 +73,10 @@ struct AlarmView: View {
         }
         
         // テストモードを切り替えるスイッチ
-        /*
         Toggle("テストモード", isOn: $alarmManager.isTestMode)
             .padding()
             .tint(Color("green"))
-         */
+         
     }
 }
 
