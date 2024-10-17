@@ -92,12 +92,9 @@ struct QuizView: View {
         }) {
             ScoreView(correctCount: self.correctCount, alarmManager: alarmManager, isCorrect: self.isCorrect)
         }
-        
-        NavigationLink(
-            destination: MainView(),
-            isActive: $navigateToMainView,
-            label: { EmptyView() }
-        )
+        .navigationDestination(isPresented: $navigateToMainView) {
+                    MainView()
+                }
         
     }
     
